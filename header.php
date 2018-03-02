@@ -13,10 +13,14 @@
       <div class="header__inner">
         <div class="container">
           <div class="row flex-bottom header__row">
-            <div class="col-xs-4">
+            <div class="col-sm-4 col-xs-6">
               <div class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/solana-logo-color.png'; ?>" alt="Solana Empowered Logo" /></div>
             </div>
-            <div class="col-xs-8 nav-wrapper">
+            <div class="col-sm-8 col-xs-6">
+            <div class="mobile-menu-toggle u-hidden-desktop u-text-right">
+              <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
+            </div>
+             <div class="nav-wrapper u-visible-desktop">
               <div class="login-btn"><a href="#">Login</a></div>
               <div class="nav">
                 <ul>
@@ -27,6 +31,8 @@
                 </ul>
               </div>
             </div>
+            </div>
+            <!-- /.nav-wrapper -->
           </div>
         </div>
       </div>
