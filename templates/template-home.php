@@ -95,4 +95,23 @@
 </section>
 <!-- /.section#how_it_works -->
 
+<section class="section section--offset-image section--secondary">
+ <div class="section__bg"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Our Story</h2>
+        <hr class="hr--small hr--left hr--white">
+        <p class="section__description">Drawing on the joint brain power behind Mobility Empowered and Solana Accommodations, Solana Empowered was founded on one simple principle: there has to be a better way to find temporary housing.</p>
+        <a href="#" class="btn btn--outline bg-ref--secondary">Read More</a>
+      </div>
+      <div class="col-sm-6">
+        <div class="section__shape"></div>
+        <div class="section__image"><img src="<?php echo get_template_directory_uri() . '/assets/img/home-housing.png'; ?>" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <?php get_footer(); ?>
