@@ -1,17 +1,20 @@
 <?php
 
-require_once( dirname( __FILE__ ) . '/functions/add-theme-support.php' );
+// little function to include partials for functions
+function include_function($filename) {
+  return require_once( dirname( __FILE__ ) . '/functions/' . $filename . '.php' );
+}
 
-require_once( dirname( __FILE__ ) . '/functions/add-woocommerce-support.php' );
+include_function('add-theme-support');
 
-require_once( dirname( __FILE__ ) . '/functions/add-styles.php' );
+include_function('add-styles');
 
-require_once( dirname( __FILE__ ) . '/functions/add-custom-jquery.php' );
+include_function('add-custom-jquery');
 
-require_once( dirname( __FILE__ ) . '/functions/add-scripts.php' );
+include_function('add-scripts');
 
-require_once( dirname( __FILE__ ) . '/functions/remove-head-junk.php' );
+include_function('remove-head-junk');
 
-require_once( dirname( __FILE__ ) . '/functions/remove-autoformatting.php' );
+include_function('remove-autoformatting');
 
-require_once( dirname( __FILE__ ) . '/functions/remove-wpversion-nag.php' );
+include_function('remove-wpversion-nag');
