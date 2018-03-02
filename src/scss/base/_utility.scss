@@ -2,8 +2,25 @@
   * UTILITY CLASSES
   */
 
+.u-visible-desktop {
+  display: none;
+  @media (min-width: bp('desktop')) {
+    display: block;
+  }
+}
+
+.u-hidden-desktop {
+  @media (min-width: bp('desktop')) {
+    display: none;
+  }
+}
+
 .u-text-center {
   text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
 }
 
 .u-color-white {
