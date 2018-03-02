@@ -1,4 +1,5 @@
 var ExtractText = require('extract-text-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: ['./src/js/main.js', './src/scss/main.scss'],
@@ -20,5 +21,13 @@ module.exports = {
       filename: 'assets/css/[name].css',
       allChunks: true,
     }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://localhost/solana-empowered',
+      files: [
+            '**/*.php'
+        ]
+    })
   ],
 };
