@@ -1,0 +1,63 @@
+/**
+  * Hero
+  */
+$hero-height: 600px;
+$hero-width: 780px;
+
+.hero {
+
+}
+
+.hero__inner {
+  position: relative;
+  height: $hero-height + 150px;
+  width: 100%;
+}
+
+.hero__image-wrapper {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.hero__shape {
+  position: absolute;
+  right: 45px;
+  top: 45px;
+  height: $hero-height - 90px;
+  width: $hero-width;
+  border: 3px solid color('primary');
+  z-index: 2;
+}
+
+.hero__image {
+  position: relative;
+  z-index: 3;
+  height: $hero-height;
+  width: $hero-width;
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-box {
+  width: 100%;
+  max-width: 565px;
+  background: color('secondary');
+  position: relative;
+  z-index: 4;
+  top: 95px;
+  color: white;
+  padding: 3em;
+}
+
+.cta__heading {
+  font-size: 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+
+.cta__description p {
+  font-weight: normal;
+  font-size: 1.2em;
+}
