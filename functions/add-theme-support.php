@@ -1,8 +1,8 @@
 <?php
-if ( ! function_exists( 'taw_setup' ) ) :
-  function taw_setup() {
+if ( ! function_exists( 'spx_setup' ) ) :
+  function spx_setup() {
     // translation support
-    load_theme_textdomain( 'taw', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'spx', get_template_directory() . '/languages' );
 
     // default posts and comments RSS feed links in head.
     add_theme_support( 'automatic-feed-links' );
@@ -15,9 +15,9 @@ if ( ! function_exists( 'taw_setup' ) ) :
 
     // wp_nav_menu()
     register_nav_menus( array(
-     'menu-1' => esc_html__( 'Primary', 'taw' ),
+     'primary' => esc_html__( 'Primary', 'spx' ),
     ) );
    }
 endif;
-add_action( 'after_setup_theme', 'taw_setup' );
+add_action( 'after_setup_theme', 'spx_setup' );
 ?>
