@@ -6,7 +6,64 @@
   padding: 5em 0;
 }
 
+.section--secondary {
+  background: color('secondary');
+  color: white;
+
+  &.section--offset-image {
+    background: transparent;
+    position: relative;
+    @media (min-width: bp('desktop')) {
+      margin-top: 100px;
+    }
+
+    .section__bg {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: color('secondary');
+      @media (min-width: bp('desktop')) {
+        left: -20%;
+      }
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section__image {
+      position: relative;
+      margin-top: 30px;
+      @media (min-width: bp('desktop')) {
+      margin-top: -120px;
+      }
+    }
+
+    .section__shape {
+      height: 400px;
+      width: 400px;
+      border: 3px solid color('primary');
+      position: absolute;
+      top: -170px;
+      right: -30px;
+      @media (max-width: bp('desktop')) {
+        display: none;
+      }
+    }
+  }
+}
+
+.section__description {
+  max-width: 20em;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-bottom: 2.5em;
+}
+
 .section--tertiary {
   background: color('tertiary');
   color: white;
 }
+
+
