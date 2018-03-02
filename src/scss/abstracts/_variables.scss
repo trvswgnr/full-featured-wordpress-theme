@@ -1,0 +1,63 @@
+///
+// Colors
+////
+$colors: (
+  'primary': #b2d357,
+  'green': #b2d357,
+
+  'secondary': #00ace4,
+  'blue': #00ace4,
+
+  'accent': #fdbf29,
+  'gold': #fdbf29,
+
+  'background': #192f5a,
+  'tertiary': #192f5a,
+  'navy': #192f5a,
+
+  'white': #ffffff,
+  'black': #111111
+);
+@function color($name) {
+  @return map-get($colors, $name);
+}
+
+$greys: (
+  1: #2F302E,
+  'green': #2F302E,
+
+  2: #404042,
+  'blue': #404042,
+
+  3: #555555,
+  'base': #555555,
+
+  4: #cccccc,
+  'border': #dedede,
+
+  5: #dedede,
+  'light': #dedede,
+);
+@function grey($name) {
+  @return map-get($greys, $name);
+}
+
+///
+// Fonts
+////
+$font-primary: 'Poppins', Arial, sans-serif;
+$font-size: 16px;
+
+
+///
+// Breakpoints
+////
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'desktop': 920px,
+  'desktop-wide': 1200px
+);
+@function bp($size) {
+  @return map-get($breakpoints, $size);
+}
