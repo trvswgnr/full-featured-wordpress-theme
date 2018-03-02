@@ -1,15 +1,15 @@
 /**
   * Grid
   */
-$container-width: 1050px;
+$container-width: 1030px;
 
 .container {
   box-sizing: border-box;
   width: 100%;
   max-width: $container-width;
   margin: 0 auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .container-fluid {
