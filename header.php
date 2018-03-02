@@ -14,7 +14,7 @@
         <div class="container">
           <div class="row flex-bottom header__row">
             <div class="col-xs-4">
-              <div class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/solana-empowered__logo--web.png'; ?>" alt="Solana Empowered Logo" /></div>
+              <div class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/solana-logo-color.png'; ?>" alt="Solana Empowered Logo" /></div>
             </div>
             <div class="col-xs-8 nav-wrapper">
               <div class="login-btn"><a href="#">Login</a></div>
