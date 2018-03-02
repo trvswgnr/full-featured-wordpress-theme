@@ -10,6 +10,10 @@
   color: #ffffff !important;
 }
 
+.u-color-secondary {
+  color: color('secondary') !important;
+}
+
 .bg-tertiary {
   background-color: color('tertiary');
 }
