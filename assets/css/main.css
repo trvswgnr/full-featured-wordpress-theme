@@ -131,6 +131,9 @@ h2, .h2 {
 .u-color-white {
   color: #ffffff !important; }
 
+.u-color-secondary {
+  color: #00ace4 !important; }
+
 .bg-tertiary {
   background-color: #192f5a; }
 
@@ -143,10 +146,10 @@ h2, .h2 {
 .container {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1020px;
+  max-width: 1050px;
   margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em; }
+  padding-left: 2em;
+  padding-right: 2em; }
 
 .container-fluid {
   margin-right: auto;
@@ -694,6 +697,21 @@ h2, .h2 {
 .header__inner {
   padding: 1.5em 0 2.5em;
   background: white; }
+
+/**
+  * Footer
+  */
+.footer {
+  text-align: center;
+  padding: 3em 0; }
+
+.footer__logo {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto 3em; }
+
+.footer__info {
+  margin-bottom: 0.5em; }
 
 /**
   * Section
