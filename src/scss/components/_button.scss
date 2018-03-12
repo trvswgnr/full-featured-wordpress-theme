@@ -15,6 +15,13 @@
   text-transform: uppercase;
 }
 
+.btn--large {
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  width: 100%;
+  max-width: 250px;
+}
+
 .btn--primary {
   background: color('primary');
   color: white;
