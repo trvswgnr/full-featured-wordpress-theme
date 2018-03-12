@@ -1,0 +1,44 @@
+.intro-text {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.solution-box {
+  position: relative;
+}
+
+.solution-box__bg {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: color('accent');
+  background-size: cover;
+
+  .solution-box--reverse & {
+    right: initial;
+    left: 0;
+    background-color: color('secondary');
+  }
+}
+
+
+.solution-box__row {
+  align-items: center;
+  min-height: 600px;
+  .solution-box--reverse & {
+    flex-direction: row-reverse;
+  }
+}
+
+.solution-box__content {
+  padding-right: 3em;
+  .solution-box--reverse & {
+    padding-right: 0;
+    padding-left: 3em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
