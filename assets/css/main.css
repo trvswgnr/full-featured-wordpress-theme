@@ -12,7 +12,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -98,6 +97,11 @@ h2, .h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
+h3, .h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 0.7em; }
+
 .hr--small {
   width: 60px;
   border: 1px solid white;
@@ -122,6 +126,9 @@ h2, .h2 {
 
 .section-subtitle {
   font-size: 1.5em; }
+
+.intro-text {
+  font-size: 1.2em; }
 
 /**
   * UTILITY CLASSES
@@ -711,6 +718,9 @@ h2, .h2 {
 .header__inner {
   padding: 1.5em 0 2.5em;
   background: white; }
+  @media (max-width: 768px) {
+    .header__inner {
+      padding-bottom: 1.5em; } }
 
 /**
   * Footer
@@ -725,13 +735,17 @@ h2, .h2 {
   margin: 0 auto 3em; }
 
 .footer__info {
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  word-wrap: break-word; }
 
 /**
   * Section
   */
 .section {
   padding: 5em 0; }
+
+.section--sm {
+  padding: 3em 0; }
 
 .section--secondary {
   background: #00ace4;
@@ -835,6 +849,49 @@ h2, .h2 {
   font-size: 1.2em; }
 
 /**
+  * Page Hero
+  */
+.page-hero__bg {
+  height: 245px;
+  width: 100%;
+  background: url("https://placeimg.com/1000/245/tech");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1; }
+
+.page-hero__lead {
+  position: relative; }
+
+.page-hero__lead-inner {
+  position: relative;
+  z-index: 2;
+  padding: 2.5em;
+  background: #00ace4;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 665px;
+  margin: 0 auto;
+  margin-top: -163.33333px; }
+  .page-hero__lead-inner p {
+    font-size: 1.65em;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; }
+
+.page-hero__shape {
+  width: 100%;
+  max-width: 739px;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #b2d357;
+  left: 0;
+  right: 0;
+  top: -50px;
+  margin: 0 auto; }
+
+/**
   * Marketing Points Section
   */
 .marketing-points {
@@ -883,6 +940,14 @@ h2, .h2 {
   font-weight: bold;
   font-size: 1.3em; }
 
+.cta {
+  text-align: center;
+  color: #ffffff;
+  padding: 4.5em 0;
+  background: #2f2f2d; }
+  .cta h2 {
+    margin-bottom: 0.7em; }
+
 /**
   * -- COMPONENTS
   */
@@ -899,8 +964,17 @@ h2, .h2 {
 
 .login-btn {
   text-align: right;
-  color: #555555;
+  color: #2f2f2d;
   margin-bottom: 12px; }
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle, .logo {
+    display: flex;
+    align-items: center; }
+  .mobile-menu-toggle {
+    justify-content: flex-end; }
+  .logo {
+    justify-content: flex-start; } }
 
 /**
   * Buttons
@@ -916,6 +990,12 @@ h2, .h2 {
   min-width: 12.5em;
   font-size: 0.85em;
   text-transform: uppercase; }
+
+.btn--large {
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  width: 100%;
+  max-width: 250px; }
 
 .btn--primary {
   background: #b2d357;
@@ -936,3 +1016,38 @@ h2, .h2 {
     color: #00ace4; }
   .btn--outline.bg-ref--tertiary:hover {
     color: #192f5a; }
+
+/**
+  * -- Templates
+  */
+.intro-text p {
+  margin-bottom: 0; }
+
+.solution-box {
+  position: relative; }
+
+.solution-box__bg {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fdbf29;
+  background-size: cover; }
+  .solution-box--reverse .solution-box__bg {
+    right: initial;
+    left: 0;
+    background-color: #00ace4; }
+
+.solution-box__row {
+  align-items: center;
+  min-height: 600px; }
+  .solution-box--reverse .solution-box__row {
+    flex-direction: row-reverse; }
+
+.solution-box__content {
+  padding-right: 3em; }
+  .solution-box--reverse .solution-box__content {
+    padding-right: 0;
+    padding-left: 3em; }
+  .solution-box__content p {
+    font-size: 1.1em; }
