@@ -17,22 +17,22 @@
               <div class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/solana-logo-color.png'; ?>" alt="Solana Empowered Logo" /></div>
             </div>
             <div class="col-sm-8 col-xs-6">
-            <div class="mobile-menu-toggle u-hidden-desktop u-text-right">
-              <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
-            </div>
-             <div class="nav-wrapper u-visible-desktop">
-              <div class="login-btn"><a href="#">Login</a></div>
-              <div class="nav">
-                <ul>
-                  <li><a class="current_page_item" href="#">Features</a></li>
-                  <li><a href="#">Suppliers</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a class="btn btn--primary" href="#">Request Demo</a></li>
-                </ul>
+              <div class="mobile-menu-toggle u-hidden-desktop u-text-right">
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
               </div>
+               <div class="nav-wrapper u-visible-desktop">
+                <div class="login-btn"><a href="#">Login</a></div>
+                <div class="nav">
+                  <ul>
+                    <li><a class="current_page_item" href="#">Features</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a class="btn btn--primary" href="#">Request Demo</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.nav-wrapper -->
             </div>
-            </div>
-            <!-- /.nav-wrapper -->
           </div>
         </div>
       </div>
