@@ -30,9 +30,15 @@
   */
 @import 'objects/hero';
 @import 'objects/marketing-points';
+@import 'objects/cta';
 
 /**
   * -- COMPONENTS
   */
 @import 'components/nav';
 @import 'components/button';
+
+/**
+  * -- Templates
+  */
+@import 'templates/solutions-overview';
