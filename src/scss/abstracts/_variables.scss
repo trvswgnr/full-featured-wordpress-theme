@@ -18,9 +18,7 @@ $colors: (
   'white': #ffffff,
   'black': #111111
 );
-@function color($name) {
-  @return map-get($colors, $name);
-}
+@function color($name) { @return map-get($colors, $name); }
 
 $greys: (
   1: #2F302E,
@@ -29,8 +27,8 @@ $greys: (
   2: #404042,
   'blue': #404042,
 
-  3: #555555,
-  'base': #555555,
+  3: #2f2f2d,
+  'base': #2f2f2d,
 
   4: #cccccc,
   'border': #dedede,
@@ -38,9 +36,8 @@ $greys: (
   5: #dedede,
   'light': #dedede,
 );
-@function grey($name) {
-  @return map-get($greys, $name);
-}
+@function grey($name) { @return map-get($greys, $name); }
+
 
 ///
 // Fonts
@@ -58,6 +55,11 @@ $breakpoints: (
   'desktop': 920px,
   'desktop-wide': 1200px
 );
-@function bp($size) {
-  @return map-get($breakpoints, $size);
-}
+@function bp($size) { @return map-get($breakpoints, $size); }
+@function breakpoint($size) { @return map-get($breakpoints, $size); }
+
+$desktop-wide: breakpoint('desktop-wide');
+$desktop: breakpoint('desktop');
+$tablet: breakpoint('tablet');
+$mobile: breakpoint('mobile');
+
