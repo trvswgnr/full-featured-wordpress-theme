@@ -2,6 +2,7 @@
   * Grid
   */
 $container-width: 1030px;
+$gutter: 1rem;
 
 .container {
   box-sizing: border-box;
@@ -29,8 +30,10 @@ $container-width: 1030px;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  @media (min-width: $mobile) {
+    margin-right: $gutter*-1;
+    margin-left: $gutter*-1;
+  }
 }
 
 .row.reverse {
@@ -47,8 +50,8 @@ $container-width: 1030px;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: $gutter;
+  padding-left: $gutter;
 }
 
 .col-xs-1 {
@@ -239,8 +242,8 @@ $container-width: 1030px;
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: $gutter;
+    padding-left: $gutter;
   }
   .col-sm-1 {
     -webkit-flex-basis: 8.3333333333%;
@@ -395,8 +398,8 @@ $container-width: 1030px;
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: $gutter;
+    padding-left: $gutter;
   }
   .col-md-1 {
     -webkit-flex-basis: 8.3333333333%;
@@ -551,8 +554,8 @@ $container-width: 1030px;
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: $gutter;
+    padding-left: $gutter;
   }
   .col-lg-1 {
     -webkit-flex-basis: 8.3333333333%;
