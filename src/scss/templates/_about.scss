@@ -1,0 +1,24 @@
+.team-member {
+
+}
+
+.team-member__photo img {
+  float: right;
+}
+
+.team-member__title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: color('primary');
+  line-height: 1;
+}
+
+.team-member__name {
+  @extend h2;
+  margin-bottom: 0.4em;
+}
+
+.team-member__description {
+  font-size: 1.2em;
+  line-height: 1.7;
+}
