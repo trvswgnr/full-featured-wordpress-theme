@@ -68,32 +68,41 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+module.exports = __webpack_require__(4);
 
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__(4);
+__webpack_require__(2);
+__webpack_require__(3);
 
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 3 */,
-/* 4 */
-/***/ (function(module, exports) {
-
 
 $(document).ready(function(){
   $('.carousel').slick();
 });
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+$('.js-menu-toggle').click(function(){
+  $('.mobile-menu').toggleClass('is-active');
+});
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
