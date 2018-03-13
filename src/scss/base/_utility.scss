@@ -4,15 +4,11 @@
 
 .u-visible-desktop {
   display: none;
-  @media (min-width: bp('desktop')) {
-    display: block;
-  }
+  @media (min-width: $desktop) { display: block; }
 }
 
 .u-hidden-desktop {
-  @media (min-width: bp('desktop')) {
-    display: none;
-  }
+  @media (min-width: $desktop) { display: none; }
 }
 
 .u-text-center {
@@ -21,6 +17,11 @@
 
 .u-text-right {
   text-align: right !important;
+}
+
+.u-text-larger {
+  font-size: 1.2em !important;
+  line-height: 1.7;
 }
 
 .u-color-white {
