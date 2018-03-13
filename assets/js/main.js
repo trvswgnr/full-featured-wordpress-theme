@@ -73,8 +73,10 @@ module.exports = __webpack_require__(2);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__(4);
 
 
 /***/ }),
@@ -82,6 +84,16 @@ module.exports = __webpack_require__(2);
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */,
+/* 4 */
+/***/ (function(module, exports) {
+
+
+$(document).ready(function(){
+  $('.carousel').slick();
+});
 
 /***/ })
 /******/ ]);
