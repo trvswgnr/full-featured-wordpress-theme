@@ -21,7 +21,7 @@
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
               </div>
                <div class="nav-wrapper u-visible-desktop">
-                <div class="login-btn"><a href="#">Login</a></div>
+                <div class="login-btn"><a href="#"><i class="fa fa-lock fa-fw"></i>Login</a></div>
                 <div class="nav">
                   <ul>
                     <li><a class="current_page_item" href="#">Features</a></li>
