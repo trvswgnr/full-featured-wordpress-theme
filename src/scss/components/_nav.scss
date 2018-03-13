@@ -22,13 +22,3 @@
 .nav-wrapper {
 }
 
-@media (max-width: $tablet) {
-.mobile-menu-toggle, .logo {
-  display: flex;
-  align-items: center;
-}
-
-.mobile-menu-toggle { justify-content: flex-end; }
-
-.logo { justify-content: flex-start; }
-}
