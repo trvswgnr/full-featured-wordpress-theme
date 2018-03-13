@@ -1000,7 +1000,8 @@ h3, .h3 {
     margin-bottom: 0.7em; }
 
 .carousel {
-  position: relative; }
+  position: relative;
+  margin-bottom: 4rem; }
 
 .carousel__slide {
   padding: 0 30px; }
@@ -1183,6 +1184,9 @@ h3, .h3 {
     padding-left: 3em; }
   .solution-box__content p {
     font-size: 1.1em; }
+
+.team-member .row {
+  align-items: center; }
 
 .team-member__photo img {
   float: right; }

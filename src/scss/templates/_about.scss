@@ -1,7 +1,9 @@
 .team-member {
 
 }
-
+.team-member .row {
+  align-items: center;
+}
 .team-member__photo img {
   float: right;
 }

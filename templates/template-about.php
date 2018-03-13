@@ -46,6 +46,8 @@
 <!-- /#diversity -->
 
 <div class="container">
+ <h2 class="u-text-center">OUR TEAM</h2>
+  <hr class="hr--small hr--accent">
   <div class="carousel">
     <div class="carousel__slide">
       <div class="team-member">
@@ -58,7 +60,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="team-member__photo"><img src="http://placehold.it/400x400" alt=""/></div>
+            <div class="team-member__photo"><img src="<?php echo get_template_directory_uri() . '/assets/img/team-member-photo-1.png'; ?>" alt=""/></div>
           </div>
         </div>
       </div>
@@ -83,5 +85,7 @@
   <!-- /.carousel -->
 </div>
 <!-- /.container -->
+
+<?php get_template_part('template-parts/section','cta'); ?>
 
 <?php get_footer(); ?>
