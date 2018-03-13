@@ -197,7 +197,7 @@ h3, .h3 {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     .row {
       margin-right: -1rem;
       margin-left: -1rem; } }

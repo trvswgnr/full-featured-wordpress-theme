@@ -30,7 +30,7 @@ $gutter: 1rem;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  @media (min-width: $mobile) {
+  @media (min-width: $tablet) {
     margin-right: $gutter*-1;
     margin-left: $gutter*-1;
   }
