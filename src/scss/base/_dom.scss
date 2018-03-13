@@ -19,3 +19,9 @@ body {
   font-family: $font-primary;
   overflow-x: hidden;
 }
+
+#page {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+}
