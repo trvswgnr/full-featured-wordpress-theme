@@ -852,6 +852,9 @@ h3, .h3 {
 /**
   * Hero
   */
+.hero--home {
+  margin-bottom: -150px; }
+
 .hero__inner {
   position: relative;
   height: 791px;

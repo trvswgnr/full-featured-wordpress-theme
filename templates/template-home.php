@@ -4,12 +4,12 @@
 <div class="hero hero--home">
   <div class="hero__inner">
     <div class="hero__image-wrapper">
-      <div class="hero__shape"></div>
-      <div class="hero__image" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/img/hero-home.png'; ?>)">
+      <div class="hero__shape js-parallax" data-scroll-speed='2'></div>
+      <div class="hero__image js-parallax" data-scroll-speed='4' style="background-image: url(<?php echo get_template_directory_uri() . '/assets/img/hero-home.png'; ?>)">
       </div>
     </div>
     <div class="container">
-      <div class="cta-box">
+      <div class="cta-box js-parallax" data-scroll-speed='6'>
         <div class="cta-box__inner">
           <div class="cta__heading-wrapper">
             <h2 class="cta__heading">The Smart Solution for Temporary Housing</h2>

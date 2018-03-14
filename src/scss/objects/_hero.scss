@@ -7,6 +7,10 @@ $hero-width: 780px;
 
 .hero {}
 
+.hero--home {
+  margin-bottom: -150px;
+}
+
 .hero__inner {
   position: relative;
   height: $hero-height + 150px;

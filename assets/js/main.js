@@ -77,6 +77,7 @@ module.exports = __webpack_require__(4);
 
 __webpack_require__(2);
 __webpack_require__(3);
+__webpack_require__(5);
 
 
 /***/ }),
@@ -103,6 +104,28 @@ $('.js-menu-toggle').click(function(){
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+const parallax = target => {
+  const amountScrolled = $(window).scrollTop();
+
+  $(target).each(function(){
+     let speed = $(this).data('scroll-speed');
+
+  if ( isNaN(speed) ) { speed = 5; }
+
+  $(this).css('transform', `translateY(${amountScrolled * (speed/10) * -1}px)`);
+  });
+
+};
+
+$(window).scroll(e => {
+  parallax('.js-parallax');
+});
+
 
 /***/ })
 /******/ ]);
