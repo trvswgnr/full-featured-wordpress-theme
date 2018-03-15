@@ -791,7 +791,7 @@ h3, .h3 {
       width: 400px;
       border: 3px solid #b2d357;
       position: absolute;
-      top: -170px;
+      top: -30px;
       right: -30px; }
       @media (max-width: 920px) {
         .section--secondary.section--offset-image .section__shape {
@@ -841,6 +841,9 @@ h3, .h3 {
   .section--image-left .row {
     min-height: 400px;
     align-items: center; }
+
+.shape-wrapper {
+  position: relative; }
 
 @media (min-width: 768px) {
   .section__content--right {
@@ -931,7 +934,6 @@ h3, .h3 {
   .page-hero__lead-inner p {
     font-size: 1.65em;
     width: 100%;
-    max-width: 400px;
     margin: 0 auto; }
 
 .page-hero__shape {
@@ -1115,7 +1117,7 @@ h3, .h3 {
 /**
   * Buttons
   */
-.btn {
+.btn, .menu-button a {
   background: #cccccc;
   display: inline-block;
   padding: 0.9em;
@@ -1133,10 +1135,10 @@ h3, .h3 {
   width: 100%;
   max-width: 250px; }
 
-.btn--primary {
+.btn--primary, .menu-button a {
   background: #b2d357;
   color: white; }
-  .btn--primary:hover, .btn--primary:visited, .btn--primary:visited:hover {
+  .btn--primary:hover, .menu-button a:hover, .btn--primary:visited, .menu-button a:visited, .btn--primary:visited:hover, .menu-button a:visited:hover {
     color: white;
     background: #a9ce43; }
 
