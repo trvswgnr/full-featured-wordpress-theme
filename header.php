@@ -22,14 +22,14 @@
               </div>
                <div class="nav-wrapper u-visible-desktop">
                 <div class="login-btn"><a href="#"><i class="fa fa-lock fa-fw"></i>Login</a></div>
-                <div class="nav">
-                  <ul>
-                    <li><a class="current_page_item" href="#">Features</a></li>
-                    <li><a href="#">Suppliers</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a class="btn btn--primary" href="#">Request Demo</a></li>
-                  </ul>
-                </div>
+                <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'primary',
+                  'menu_class'     => 'nav__inner',
+                  'container'      => 'div',
+                  'container_class' => 'nav'
+                ) );
+                ?>
               </div>
               <!-- /.nav-wrapper -->
             </div>
@@ -40,13 +40,13 @@
 
     <div class="mobile-menu">
       <div class="mobile-menu__close js-menu-toggle"></div>
-      <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Suppliers</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Request Demo</a></li>
-        <li><a href="#"><span class="fa fa-lock fa-fw"></span>Login</a></li>
-      </ul>
+      <?php
+      wp_nav_menu( array(
+        'theme_location' => 'mobile',
+        'menu_class'     => '',
+        'container'      => false
+      ) );
+      ?>
     </div>
 
       <?php
@@ -55,4 +55,5 @@
       'menu_class'     => 'nav',
       'container'      => false
     ) );
-    */ ?>
+    */
+    ?>
