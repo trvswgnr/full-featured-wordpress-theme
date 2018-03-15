@@ -1,3 +1,3 @@
 require('./document-ready.js');
-require('./mobile-menu.js');
+require('./nav.js');
 require('./parallax.js');
