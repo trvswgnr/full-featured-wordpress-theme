@@ -22,3 +22,7 @@
 .nav-wrapper {
 }
 
+.menu-button a {
+  @extend .btn;
+  @extend .btn--primary;
+}
