@@ -106,8 +106,12 @@
         <a href="#" class="btn btn--outline bg-ref--secondary">Read More</a>
       </div>
       <div class="col-sm-6">
-        <div class="section__shape"></div>
-        <div class="section__image"><img src="<?php echo get_template_directory_uri() . '/assets/img/home-housing.png'; ?>" alt=""></div>
+        <div class="shape-wrapper">
+          <div class="section__shape"></div>
+          <div class="section__image">
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/home-housing.png'; ?>" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </div>
