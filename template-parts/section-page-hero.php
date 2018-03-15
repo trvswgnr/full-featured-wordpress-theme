@@ -9,11 +9,13 @@
       the_post();
   ?>
   <h2><?php the_title(); ?></h2>
-  <?php endwhile; else : ?>
+
+      <hr class="hr--small hr--white">
+
+      <p><?php if ( !empty( get_the_content() ) ) { the_content(); } else { echo 'A Holistic Approach to Temporary Housing'; } ?></p>
+        <?php endwhile; else : ?>
 
   <?php endif; ?>
-      <hr class="hr--small hr--white">
-      <p>A Holistic Approach to Temporary Housing</p>
     </div>
   </div>
 </div>
