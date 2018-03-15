@@ -16,6 +16,7 @@ if ( ! function_exists( 'spx_setup' ) ) :
     // wp_nav_menu()
     register_nav_menus( array(
      'primary' => esc_html__( 'Primary', 'spx' ),
+     'mobile'  => esc_html__( 'Mobile', 'spx')
     ) );
    }
 endif;
