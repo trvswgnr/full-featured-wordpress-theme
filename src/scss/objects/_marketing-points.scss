@@ -39,6 +39,12 @@
     &.is-last:before {
       right: 50%;
     }
+    &.is-middle:before {
+      @media (max-width: $tablet) {
+      left: -10%;
+      width: 120%;
+      }
+    }
 
     &:after {
       content: '';
@@ -55,7 +61,6 @@
 .marketing-points__description {
   font-size: 1.1em;
 }
-
 
 .marketing-points__subheading {
   font-weight: bold;
