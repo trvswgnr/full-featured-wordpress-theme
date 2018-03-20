@@ -39,21 +39,13 @@
   border: 2px solid white;
   background: transparent;
   color: white;
-  &:visited {
-    color: white;
-  }
-  &:hover {
-    background: white;
-  }
-  &.bg-ref--secondary {
-    &:hover {
-      color: color('secondary');
-    }
-  }
-  &.bg-ref--tertiary {
-    &:hover {
-      color: color('tertiary');
-    }
-  }
+
+  &:visited { color: white; }
+
+  &:hover { background: white; }
+
+  &.bg-ref--secondary:hover { color: color('secondary'); }
+
+  &.bg-ref--tertiary:hover { color: color('tertiary'); }
 }
 
