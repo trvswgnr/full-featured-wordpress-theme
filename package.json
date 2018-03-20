@@ -1,8 +1,9 @@
 {
   "name": "solana-empowered",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom WordPress theme for Solana Empowered.",
   "main": "webpack.config.js",
+  "repository": "https://sparxoo.git.beanstalkapp.com/solana-empowered.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
