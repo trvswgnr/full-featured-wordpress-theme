@@ -25,11 +25,13 @@
 .btn--primary {
   background: color('primary');
   color: white;
+  transition: 0.1s;
   &:hover,
-  &:visited,
   &:visited:hover {
     color: white;
-    background: darken(color('primary'), 5%);
+    background: darken(color('primary'), 7%);
+    transition: 0.3s;
+    cursor: pointer;
   }
 }
 
