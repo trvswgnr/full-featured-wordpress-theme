@@ -1230,10 +1230,13 @@ address {
 
 .btn--primary, .gform_wrapper .gform_footer .button.gform_button, .menu-button a {
   background: #b2d357;
-  color: white; }
-  .btn--primary:hover, .gform_wrapper .gform_footer .button.gform_button:hover, .menu-button a:hover, .btn--primary:visited, .gform_wrapper .gform_footer .button.gform_button:visited, .menu-button a:visited, .btn--primary:visited:hover, .gform_wrapper .gform_footer .button.gform_button:visited:hover, .menu-button a:visited:hover {
+  color: white;
+  transition: 0.1s; }
+  .btn--primary:hover, .gform_wrapper .gform_footer .button.gform_button:hover, .menu-button a:hover, .btn--primary:visited:hover, .gform_wrapper .gform_footer .button.gform_button:visited:hover, .menu-button a:visited:hover {
     color: white;
-    background: #a9ce43; }
+    background: #a5cc3b;
+    transition: 0.3s;
+    cursor: pointer; }
 
 .btn--outline {
   border: 2px solid white;
