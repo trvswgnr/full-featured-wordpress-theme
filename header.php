@@ -24,9 +24,9 @@
                 <div class="login-btn"><a href="#"><i class="fa fa-lock fa-fw"></i>Login</a></div>
                 <?php
                 wp_nav_menu( array(
-                  'theme_location' => 'primary',
-                  'menu_class'     => 'nav__inner',
-                  'container'      => 'div',
+                  'theme_location'  => 'primary',
+                  'menu_class'      => 'nav__inner',
+                  'container'       => 'div',
                   'container_class' => 'nav'
                 ) );
                 ?>
@@ -48,12 +48,3 @@
       ) );
       ?>
     </div>
-
-      <?php
-   /* wp_nav_menu( array(
-      'theme_location' => 'primary',
-      'menu_class'     => 'nav',
-      'container'      => false
-    ) );
-    */
-    ?>
