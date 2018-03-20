@@ -988,6 +988,10 @@ address {
       left: 50%; }
     .marketing-points--alt .marketing-points__heading.is-last:before {
       right: 50%; }
+    @media (max-width: 768px) {
+      .marketing-points--alt .marketing-points__heading.is-middle:before {
+        left: -10%;
+        width: 120%; } }
     .marketing-points--alt .marketing-points__heading:after {
       content: '';
       display: block;
