@@ -87,6 +87,7 @@ $page-hero-bg-height: 245px;
   position: relative;
 }
 
+$page-hero-inner-width: 665px;
 .page-hero__lead-inner {
   position: relative;
   z-index: 2;
@@ -95,7 +96,7 @@ $page-hero-bg-height: 245px;
   color: white;
   text-align: center;
   width: 100%;
-  max-width: 665px;
+  max-width: $page-hero-inner-width;
   margin: 0 auto;
   margin-top: -($page-hero-bg-height/1.5);
 
