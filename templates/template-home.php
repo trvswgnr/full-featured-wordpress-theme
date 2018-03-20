@@ -46,7 +46,9 @@
       </div>
       <div class="col-sm-4">
         <div class="marketing-points__item">
-          <div class="marketing-points__image-wrapper"><img src="<?php echo get_template_directory_uri().'/assets/img/browser-window.svg'; ?>" alt=""></div>
+          <div class="marketing-points__image-wrapper">
+            <img src="<?php echo get_template_directory_uri().'/assets/img/browser-window.svg'; ?>" alt="">
+          </div>
           <h4 class="marketing-points__heading">Seamless Technology</h4>
           <div class="marketing-points__description"><p>Centralized platform eliminates duplicate data entry and endless email chains</p></div>
         </div>
@@ -81,7 +83,7 @@
       </div>
       <div class="col-sm-4">
         <div class="marketing-points__item">
-          <h4 class="marketing-points__heading">Select</h4>
+          <h4 class="marketing-points__heading is-middle">Select</h4>
           <h4 class="marketing-points__subheading">Easy Comparison</h4>
           <div class="marketing-points__description">
             <p>Choose the properties that you’re interested in and request pricing. View quotes side-by-side, and accept a quote with one-click.</p>
