@@ -135,6 +135,14 @@ h3, .h3 {
 .intro-text {
   font-size: 1.2em; }
 
+address {
+  line-height: 1.5;
+  font-style: normal; }
+
+.address-contact {
+  line-height: 1.8;
+  font-size: 1.3em; }
+
 /**
   * UTILITY CLASSES
   */
@@ -1096,6 +1104,91 @@ h3, .h3 {
     transition: opacity 0.3s; }
 
 /**
+  * Forms
+  */
+.gform_wrapper#gform_wrapper_1 {
+  margin-top: 5em; }
+
+.gform_wrapper form[method="post"] {
+  width: 100%;
+  max-width: 665px;
+  margin: 0 auto; }
+
+.gform_wrapper .gform_body input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper .gform_body textarea.large {
+  background: #eeeeee;
+  border: none;
+  padding: 1.5em;
+  margin-bottom: 1em; }
+  .gform_wrapper .gform_body input:focus:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper .gform_body textarea.large:focus {
+    outline: none; }
+
+.gform_wrapper .gform_body .gfield_label {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.5em; }
+
+.gform_wrapper .gform_body .gfield_required {
+  color: #2F302E; }
+
+.gform_wrapper .gform_body .field_sublabel_below .ginput_complex.ginput_container label {
+  display: none; }
+
+.gform_wrapper .gform_body input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  height: 4em; }
+
+.gform_wrapper .gform_body .gfield_label:empty {
+  display: none; }
+
+.gform_wrapper .gform_body .bottom-checkbox {
+  margin-top: -12px; }
+
+.gform_wrapper .gform_body input[type=checkbox] {
+  visibility: hidden; }
+
+.gform_wrapper .gform_body .gfield_checkbox li label {
+  position: relative;
+  padding-left: 12px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 1.1em;
+  max-width: 80%; }
+  .gform_wrapper .gform_body .gfield_checkbox li label:before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: -20px;
+    background: white;
+    border: 2px solid black; }
+  .gform_wrapper .gform_body .gfield_checkbox li label:after {
+    content: '\2713';
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    font-size: 1.5em;
+    opacity: 0; }
+
+.gform_wrapper .gform_body ul.gfield_checkbox li input[type=checkbox]:checked + label {
+  font-weight: 400; }
+  .gform_wrapper .gform_body ul.gfield_checkbox li input[type=checkbox]:checked + label:after {
+    opacity: 1;
+    animation: pop 0.2s linear 1; }
+
+@media only screen and (min-width: 641px) {
+  .gform_wrapper .gform_body ul.gform_fields li.gfield {
+    padding-right: 0; } }
+
+.gform_wrapper .gform_footer .button.gform_button {
+  border: none;
+  padding-top: 1.1em !important;
+  padding-bottom: 1.1em !important; }
+  .gform_wrapper .gform_footer .button.gform_button:focus {
+    outline: none; }
+
+@keyframes pop {
+  50% {
+    transform: scale(1.5); } }
+
+/**
   * -- COMPONENTS
   */
 /**
@@ -1117,7 +1210,7 @@ h3, .h3 {
 /**
   * Buttons
   */
-.btn, .menu-button a {
+.btn, .gform_wrapper .gform_footer .button.gform_button, .menu-button a {
   background: #cccccc;
   display: inline-block;
   padding: 0.9em;
@@ -1135,10 +1228,10 @@ h3, .h3 {
   width: 100%;
   max-width: 250px; }
 
-.btn--primary, .menu-button a {
+.btn--primary, .gform_wrapper .gform_footer .button.gform_button, .menu-button a {
   background: #b2d357;
   color: white; }
-  .btn--primary:hover, .menu-button a:hover, .btn--primary:visited, .menu-button a:visited, .btn--primary:visited:hover, .menu-button a:visited:hover {
+  .btn--primary:hover, .gform_wrapper .gform_footer .button.gform_button:hover, .menu-button a:hover, .btn--primary:visited, .gform_wrapper .gform_footer .button.gform_button:visited, .menu-button a:visited, .btn--primary:visited:hover, .gform_wrapper .gform_footer .button.gform_button:visited:hover, .menu-button a:visited:hover {
     color: white;
     background: #a9ce43; }
 
