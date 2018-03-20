@@ -35,9 +35,13 @@
     <div class="row marketing-points">
       <div class="col-sm-4">
         <div class="marketing-points__item">
-    <div class="marketing-points__image-wrapper"><img src="<?php echo get_template_directory_uri().'/assets/img/binoculars.svg'; ?>" alt=""></div>
+          <div class="marketing-points__image-wrapper">
+            <img src="<?php echo get_template_directory_uri().'/assets/img/binoculars.svg'; ?>" alt="">
+          </div>
           <h4 class="marketing-points__heading">Marketplace Visibility</h4>
-          <div class="marketing-points__description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus pariatur dolores debitis.</p></div>
+          <div class="marketing-points__description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus pariatur dolores debitis.</p>
+          </div>
         </div>
       </div>
       <div class="col-sm-4">
@@ -68,25 +72,29 @@
     <div class="row marketing-points marketing-points--alt">
       <div class="col-sm-4">
         <div class="marketing-points__item">
-
           <h4 class="marketing-points__heading is-first">Search</h4>
           <h4 class="marketing-points__subheading">Easy Comparison</h4>
-          <div class="marketing-points__description"><p>Get easy access to over 10,000 global properties through independent suppliers all over the world. Review detailed property profiles to make sure every need is met.</p></div>
+          <div class="marketing-points__description">
+            <p>Get easy access to over 10,000 global properties through independent suppliers all over the world. Review detailed property profiles to make sure every need is met.</p>
+          </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="marketing-points__item">
-
           <h4 class="marketing-points__heading">Select</h4>
           <h4 class="marketing-points__subheading">Easy Comparison</h4>
-          <div class="marketing-points__description"><p>Choose the properties that you’re interested in and request pricing. View quotes side-by-side, and accept a quote with one-click.</p></div>
+          <div class="marketing-points__description">
+            <p>Choose the properties that you’re interested in and request pricing. View quotes side-by-side, and accept a quote with one-click.</p>
+          </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="marketing-points__item">
           <h4 class="marketing-points__heading is-last">Manage</h4>
           <h4 class="marketing-points__subheading">Easy Comparison</h4>
-          <div class="marketing-points__description"><p>Get total support for the entire stay. Centralized management and full visibility of booking terms, invoicing, check-in/check-out, inspections, problem resolution, and so much more.</p></div>
+          <div class="marketing-points__description">
+            <p>Get total support for the entire stay. Centralized management and full visibility of booking terms, invoicing, check-in/check-out, inspections, problem resolution, and so much more.</p>
+          </div>
         </div>
       </div>
     </div>
