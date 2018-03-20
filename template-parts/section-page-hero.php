@@ -12,7 +12,7 @@
 
       <hr class="hr--small hr--white">
 
-      <p><?php if ( !empty( get_the_content() ) ) { the_content(); } else { echo 'A Holistic Approach to Temporary Housing'; } ?></p>
+      <p>A Holistic Approach to Temporary Housing</p>
         <?php endwhile; else : ?>
 
   <?php endif; ?>
