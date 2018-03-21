@@ -5,7 +5,7 @@
 
   <div class="section section--sm intro-text u-text-center">
 <div class="container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ut a, explicabo, ipsum tempora quas sunt dolores unde laudantium, soluta ullam illum itaque ab? Non adipisci, veritatis vero perspiciatis quasi!</p>
+    <p><?php get_template_part('template-parts/loop','content'); ?></p>
   </div>
 </div>
 <!-- /.section -->
