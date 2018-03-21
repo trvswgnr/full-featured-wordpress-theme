@@ -69,9 +69,14 @@ $hero-width: 780px;
   * Page Hero
   */
 
-.page-hero {}
-
 $page-hero-bg-height: 245px;
+$page-hero-offset: 90px;
+
+.page-hero {
+  position: relative;
+  margin-bottom: $page-hero-offset;
+}
+
 
 .page-hero__bg {
   height: 245px;
@@ -84,7 +89,10 @@ $page-hero-bg-height: 245px;
 }
 
 .page-hero__lead {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -$page-hero-offset;
 }
 
 $page-hero-inner-width: 665px;
@@ -103,7 +111,6 @@ $page-hero-inner-width: 665px;
   p {
     font-size: 1.65em;
     width: 100%;
-//    max-width: 400px;
     margin: 0 auto;
   }
 }
