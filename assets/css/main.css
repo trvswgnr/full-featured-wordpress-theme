@@ -916,6 +916,10 @@ address {
 /**
   * Page Hero
   */
+.page-hero {
+  position: relative;
+  margin-bottom: 90px; }
+
 .page-hero__bg {
   height: 245px;
   width: 100%;
@@ -926,7 +930,10 @@ address {
   z-index: 1; }
 
 .page-hero__lead {
-  position: relative; }
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -90px; }
 
 .page-hero__lead-inner {
   position: relative;
@@ -1111,7 +1118,7 @@ address {
   * Forms
   */
 .gform_wrapper#gform_wrapper_1 {
-  margin-top: 5em; }
+  padding-top: 5em; }
 
 .gform_wrapper form[method="post"] {
   width: 100%;
