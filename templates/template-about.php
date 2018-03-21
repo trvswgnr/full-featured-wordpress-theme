@@ -49,38 +49,41 @@
  <h2 class="u-text-center">OUR TEAM</h2>
   <hr class="hr--small hr--accent">
   <div class="carousel">
+<?php
+$member_args = array(
+  'post_type'   => 'teammember',
+  'post_status' => 'publish'
+);
+$members = new WP_Query( $member_args );
+if( $members->have_posts() ) :
+  while( $members->have_posts() ) :
+    $members->the_post();
+    $member_name = get_the_title();
+    $member_description = get_the_content();
+    $member_title = get_field('member_title');
+?>
     <div class="carousel__slide">
       <div class="team-member">
         <div class="row">
           <div class="col-sm-6">
-            <h4 class="team-member__title">Founder</h4>
-            <h4 class="team-member__name">Claudia Gorman</h4>
+            <h4 class="team-member__title"><?php echo $member_title; ?></h4>
+            <h4 class="team-member__name"><?php echo $member_name; ?></h4>
             <div class="team-member__description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum pariatur facilis quam officia similique, possimus molestiae minus architecto nulla fugiat laboriosam, soluta provident aliquid alias nemo facere neque sapiente placeat.</p>
+              <p><?php echo $member_description; ?></p>
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="team-member__photo"><img src="<?php echo get_template_directory_uri() . '/assets/img/team-member-photo-1.png'; ?>" alt=""/></div>
+            <div class="team-member__photo"><img src="<?php echo the_post_thumbnail_url(); ?>" /></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel__slide">
-      <div class="team-member">
-        <div class="row">
-          <div class="col-sm-6">
-            <h4 class="team-member__title">Title</h4>
-            <h4 class="team-member__name">Member Name</h4>
-            <div class="team-member__description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum pariatur facilis quam officia similique, possimus molestiae minus architecto nulla fugiat laboriosam, soluta provident aliquid alias nemo facere neque sapiente placeat.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="team-member__photo"><img src="http://placehold.it/400x400" alt=""/></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- /.carousel__slide -->
+    <?php
+      endwhile;
+    endif;
+    wp_reset_postdata();
+    ?>
   </div>
   <!-- /.carousel -->
 </div>
