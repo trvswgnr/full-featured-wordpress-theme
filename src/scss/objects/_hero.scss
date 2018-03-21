@@ -100,7 +100,8 @@ $page-hero-inner-width: 665px;
   position: relative;
   z-index: 2;
   padding: 2.5em;
-  background: color('secondary');
+ background: color('secondary');
+  @media (max-width: $tablet) { background: rgba(color('secondary'),0.9); }
   color: white;
   text-align: center;
   width: 100%;

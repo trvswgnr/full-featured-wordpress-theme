@@ -13,6 +13,9 @@
   min-width: 12.5em;
   font-size: 0.85em;
   text-transform: uppercase;
+  &:hover, &:focus, &:visited {
+    color: white;
+  }
 }
 
 .btn--large {
@@ -32,6 +35,7 @@
     background: darken(color('primary'), 7%);
     transition: 0.3s;
     cursor: pointer;
+
   }
 }
 

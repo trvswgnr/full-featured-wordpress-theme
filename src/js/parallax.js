@@ -1,4 +1,4 @@
-const parallax = target => {
+const parallax = function(target){
   const amountScrolled = $(window).scrollTop();
 
   $(target).each(function(){

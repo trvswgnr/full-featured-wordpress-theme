@@ -5,6 +5,7 @@ $container-width: 1030px;
 $gutter: 1rem;
 
 .container {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   max-width: $container-width;
@@ -50,8 +51,10 @@ $gutter: 1rem;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
+  @media (min-width: $tablet) {
   padding-right: $gutter;
   padding-left: $gutter;
+  }
 }
 
 .col-xs-1 {

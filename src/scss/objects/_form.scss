@@ -75,16 +75,16 @@
       position: absolute;
       height: 20px;
       width: 20px;
-      left: -20px;
+      left: -18px;
       background: white;
       border: 2px solid black;
     }
     &:after {
       content: '\2713'; //checkmark symbol
       position: absolute;
-      left: -20px;
+      left: -18px;
       top: -5px;
-      font-size: 1.5em;
+      font-size: 26px;
       opacity: 0;
 
     }
@@ -92,7 +92,6 @@
 
   ul.gfield_checkbox li input[type=checkbox]:checked + label {
     font-weight: 400; // by default gforms changes label to bold on :checked - let's not
-
     // animate checkmark symbol in when checked
     &:after {
       opacity: 1;
@@ -106,6 +105,7 @@
     }
   }
 } //.gform_wrapper .gform_body
+
 .gform_wrapper .gform_footer .button.gform_button {
   @extend .btn;
   @extend .btn--primary;
@@ -120,5 +120,7 @@
 
 
 @keyframes pop {
-  50%  { transform: scale(1.5); }
+  50% {
+    transform: scale(1.5);
+  }
 }

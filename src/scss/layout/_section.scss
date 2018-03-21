@@ -97,6 +97,11 @@
   margin-top: 7em;
   margin-bottom: 7em;
   position: relative;
+  @media (max-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3em 0;
+  }
 
   .section__img {
     width: 50%;
@@ -106,6 +111,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width: $tablet) {
+      position: relative;
+    }
   }
 
   .row {
@@ -120,4 +128,8 @@
 
 .section__content--right {
   @media (min-width: $tablet) { padding-left: 4em; }
+  @media (max-width: $tablet) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }

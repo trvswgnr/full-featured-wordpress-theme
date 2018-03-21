@@ -9,6 +9,9 @@ html {
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   box-sizing: border-box;
+   &.nav-open {
+    overflow-y: hidden;
+  }
 }
 
 body {
@@ -18,10 +21,12 @@ body {
   line-height: 1.5;
   font-family: $font-primary;
   overflow-x: hidden;
+
 }
 
 #page {
   position: absolute;
   width: 100%;
   overflow-x: hidden;
+
 }

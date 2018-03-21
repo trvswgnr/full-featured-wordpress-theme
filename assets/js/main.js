@@ -68,61 +68,103 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(5);
+module.exports = __webpack_require__(6);
 
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
 __webpack_require__(2);
 __webpack_require__(3);
 __webpack_require__(4);
-
+__webpack_require__(5);
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.carousel').slick();
 });
 
-
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-$('.js-menu-toggle').click(function(){
+"use strict";
+
+
+$('.js-menu-toggle').click(function () {
   $('.mobile-menu').toggleClass('is-active');
+  $('html').toggleClass('nav-open');
 });
-
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-const parallax = target => {
-  const amountScrolled = $(window).scrollTop();
+"use strict";
 
-  $(target).each(function(){
-    let speed = $(this).data('scroll-speed');
 
-    if ( isNaN(speed) ) { speed = 5; }
+var parallax = function parallax(target) {
+  var amountScrolled = $(window).scrollTop();
 
-    $(this).css('transform', `translateY(${(amountScrolled * (speed/10) * -1)}px)`);
+  $(target).each(function () {
+    var speed = $(this).data('scroll-speed');
+
+    if (isNaN(speed)) {
+      speed = 5;
+    }
+
+    $(this).css('transform', 'translateY(' + amountScrolled * (speed / 10) * -1 + 'px)');
   });
-
 };
 
-$(window).scroll(e => {
+$(window).scroll(function (e) {
   parallax('.js-parallax');
 });
 
-
 /***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function fitText(item) {
+  item.style.display = 'inline-block';
+  item.style.fontSize = '1px';
+  var parentWidth = item.parentNode.offsetWidth;
+  var percentage = parentWidth / item.offsetWidth;
+  var size = 0;
+  while (item.offsetWidth < parentWidth) {
+    size += 1;
+    item.style.fontSize = size + 'px';
+  }
+  item.style.fontSize = size - 1 + 'px';
+}
+
+var elements = document.querySelectorAll('.js-fit-text');
+
+window.onresize = function () {
+  var window_width = $(window).width();
+  console.log(window_width);
+  if (window_width <= 460) {
+    Array.prototype.forEach.call(elements, fitText);
+  }
+};
+
+window.onresize();
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

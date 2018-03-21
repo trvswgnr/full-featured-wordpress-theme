@@ -12,11 +12,11 @@
     <header class="header">
       <div class="header__inner">
         <div class="container">
-          <div class="row flex-middle header__row">
-            <div class="col-sm-4 col-xs-6">
+          <div class="row header__row">
+            <div class="col-sm-4 col-xs-7">
               <a href="<?php echo get_site_url(); ?>" class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/solana-logo-color.png'; ?>" alt="Solana Empowered Logo" /></a>
             </div>
-            <div class="col-sm-8 col-xs-6">
+            <div class="col-sm-8 col-xs-5">
               <div class="mobile-menu-toggle u-hidden-desktop u-text-right js-menu-toggle">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
               </div>
