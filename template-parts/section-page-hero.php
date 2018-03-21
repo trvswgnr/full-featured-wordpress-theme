@@ -7,12 +7,13 @@
   if ( have_posts() ) :
     while ( have_posts() ) :
       the_post();
+      $hero_text = get_field('hero_text');
   ?>
   <h2><?php the_title(); ?></h2>
 
       <hr class="hr--small hr--white">
 
-      <p>A Holistic Approach to Temporary Housing</p>
+      <p><?php echo $hero_text; ?></p>
         <?php endwhile; else : ?>
 
   <?php endif; ?>
