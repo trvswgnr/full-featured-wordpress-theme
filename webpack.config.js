@@ -1,5 +1,9 @@
 var ExtractText = require('extract-text-webpack-plugin');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+var autoprefixer = require('autoprefixer');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
 
 module.exports = {
   entry: ['./src/js/main.js', './src/scss/main.scss'],
@@ -11,9 +15,17 @@ module.exports = {
       {
         test: /\.(css|sass|scss)$/,
         use: ExtractText.extract({
-          use: ['css-loader', 'sass-loader'],
+          use: ['css-loader', 'sass-loader', 'postcss-loader'],
         })
-      }
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      },
     ]
   },
   plugins: [
@@ -29,5 +41,5 @@ module.exports = {
             '**/*.php'
         ]
     })
-  ],
+  ]
 };
