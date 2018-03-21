@@ -6,7 +6,7 @@
 // Gravity Forms Styles
 //////
 .gform_wrapper#gform_wrapper_1 {
-  margin-top: 5em;
+  padding-top: 5em;
 }
 
 .gform_wrapper form[method="post"] {
@@ -93,6 +93,7 @@
   ul.gfield_checkbox li input[type=checkbox]:checked + label {
     font-weight: 400; // by default gforms changes label to bold on :checked - let's not
 
+    // animate checkmark symbol in when checked
     &:after {
       opacity: 1;
       animation: pop 0.2s linear 1;
