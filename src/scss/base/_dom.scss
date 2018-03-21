@@ -9,7 +9,7 @@ html {
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   box-sizing: border-box;
-   &.nav-open {
+   &.nav-open, &.nav-open #page {
     overflow-y: hidden;
   }
 }

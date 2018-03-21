@@ -11,6 +11,10 @@
   @media (min-width: $desktop) { display: none; }
 }
 
+.u-hidden-sm {
+  @media (max-width: $tablet) { display: none !important; }
+}
+
 .u-text-center {
   text-align: center !important;
 }
