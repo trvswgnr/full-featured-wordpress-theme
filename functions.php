@@ -15,6 +15,8 @@ include_function('add-scripts');
 
 include_function('add-custom-post-types');
 
+include_function('add-svg-upload-support');
+
 include_function('remove-head-junk');
 
 include_function('remove-autoformatting');
