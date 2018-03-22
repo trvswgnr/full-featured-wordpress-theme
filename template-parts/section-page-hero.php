@@ -9,11 +9,11 @@
       the_post();
       $hero_text = get_field('hero_text');
   ?>
-  <h2><?php the_title(); ?></h2>
+  <h1 class="h2"><?php the_title(); ?></h1>
 
       <hr class="hr--small hr--white">
 
-      <p><?php echo $hero_text; ?></p>
+      <h2 class="p"><?php echo $hero_text; ?></h2>
         <?php endwhile; else : ?>
 
   <?php endif; ?>

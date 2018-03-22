@@ -94,7 +94,8 @@
 }
 
 .section--image-left {
-  margin-top: 7em;
+  @include fluid-property(margin-top,10, 100, $tablet, $desktop);
+  @include fluid-property(padding-top,20, 50, $tablet, $desktop);
   margin-bottom: 7em;
   position: relative;
   @media (max-width: $tablet) {

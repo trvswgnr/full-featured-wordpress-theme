@@ -93,8 +93,10 @@ a {
   a:hover, a:focus, a:visited, a:visited:hover {
     color: #494a47; }
 
-p {
-  margin-bottom: 1.4em; }
+p, .p {
+  margin-bottom: 1.4em;
+  text-transform: none;
+  letter-spacing: normal; }
 
 h1, h2, .team-member__name, h3, h4, h5, h6 {
   font-weight: 300; }
@@ -868,9 +870,28 @@ address {
   font-weight: normal; }
 
 .section--image-left {
-  margin-top: 7em;
+  margin-top: 55px;
+  margin-top: calc(59.21053vw + -444.73684px);
+  padding-top: 35px;
+  padding-top: calc(19.73684vw + -131.57895px);
   margin-bottom: 7em;
   position: relative; }
+  @media (max-width: 768px) {
+    .section--image-left {
+      margin-top: 55px;
+      margin-top: 10px; } }
+  @media (min-width: 920px) {
+    .section--image-left {
+      margin-top: 55px;
+      margin-top: 100px; } }
+  @media (max-width: 768px) {
+    .section--image-left {
+      padding-top: 35px;
+      padding-top: 20px; } }
+  @media (min-width: 920px) {
+    .section--image-left {
+      padding-top: 35px;
+      padding-top: 50px; } }
   @media (max-width: 768px) {
     .section--image-left {
       margin-top: 0;
@@ -995,7 +1016,7 @@ address {
   @media (max-width: 768px) {
     .page-hero__lead-inner {
       background: rgba(0, 172, 228, 0.9); } }
-  .page-hero__lead-inner p {
+  .page-hero__lead-inner p, .page-hero__lead-inner .p {
     font-size: 1.65em;
     width: 100%;
     margin: 0 auto; }
