@@ -1,21 +1,18 @@
 var ExtractText = require('extract-text-webpack-plugin');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-var autoprefixer = require('autoprefixer');
-var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-
-module.exports = {
+var config = {
   entry: ['./src/js/main.js', './src/scss/main.scss'],
   output: {
     filename: 'assets/js/[name].js'
   },
   module: {
+
     rules: [
       {
         test: /\.(css|sass|scss)$/,
         use: ExtractText.extract({
-          use: ['css-loader', 'sass-loader', 'postcss-loader'],
+          use: ['css-loader', 'sass-loader'],
         })
       },
       {
@@ -23,7 +20,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015']
+          presets: ['env']
         }
       },
     ]
@@ -33,6 +30,7 @@ module.exports = {
       filename: 'assets/css/[name].css',
       allChunks: true,
     }),
+    // @NOTE: make sure this proxy matches the folder name of your wordpress installation
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
@@ -41,3 +39,5 @@ module.exports = {
     })
   ]
 };
+
+module.exports = config;
