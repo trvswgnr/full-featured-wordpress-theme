@@ -43,10 +43,14 @@
   border: 2px solid white;
   background: transparent;
   color: white;
+  transition: 0.1s;
 
   &:visited { color: white; }
 
-  &:hover { background: white; }
+  &:hover {
+    background: white;
+    transition: 0.2s;
+  }
 
   &.bg-ref--secondary:hover { color: color('secondary'); }
 

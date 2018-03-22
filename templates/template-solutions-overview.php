@@ -19,7 +19,7 @@
           <h2>SEARCH</h2>
           <hr class="hr--small hr--left hr--accent">
           <h3>Open Marketplace Visibility</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quam soluta earum mollitia vel labore molestiae. Consequatur laboriosam praesentium voluptatem optio sapiente, sit molestiae eius eligendi obcaecati distinctio, quaerat quae!</p>
+          <p>Search a constantly updating database of 10,000+ global properties to find the perfect temporary housing for your unique needs. Whether it’s a hotel, a serviced apartment, a furnished corporate apartment, or a single family home, we’ve got you covered for any length of stay, anywhere in the world.</p>
         </div>
       </div>
       <div class="col-sm-6"></div>
@@ -36,8 +36,8 @@
         <div class="solution-box__content">
           <h2>Select</h2>
           <hr class="hr--small hr--left hr--accent">
-          <h3>Open Marketplace Visibility</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quam soluta earum mollitia vel labore molestiae. Consequatur laboriosam praesentium voluptatem optio sapiente, sit molestiae eius eligendi obcaecati distinctio, quaerat quae!</p>
+          <h3>Quote, Compare, and Book</h3>
+          <p>Request pricing from multiple properties and compare quotes side-by-side with a clear picture of agreement terms. Suppliers can access your request on a level playing field, getting you the best housing at the most competitive price. When you’re ready to book, easily accept a quote with one click.</p>
         </div>
       </div>
       <div class="col-sm-6"></div>
@@ -54,8 +54,8 @@
         <div class="solution-box__content">
           <h2>Manage</h2>
           <hr class="hr--small hr--left hr--accent">
-          <h3>Open Marketplace Visibility</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quam soluta earum mollitia vel labore molestiae. Consequatur laboriosam praesentium voluptatem optio sapiente, sit molestiae eius eligendi obcaecati distinctio, quaerat quae!</p>
+          <h3>The Solana Empowered Difference</h3>
+          <p>Your Solana Empowered experience doesn’t end when you accept a quote. Manage your talent’s entire stay, including inspections, check-in/check-out, problem resolution, and invoicing. Easily track employee expense audits, issue reimbursements, and review detailed reports from one central dashboard.</p>
         </div>
       </div>
       <div class="col-sm-6"></div>

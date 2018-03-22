@@ -962,7 +962,7 @@ address {
 
 .cta-box {
   width: 100%;
-  max-width: 565px;
+  max-width: 566px;
   background: #00ace4;
   position: relative;
   z-index: 4;
@@ -1357,11 +1357,13 @@ address {
 .btn--outline {
   border: 2px solid white;
   background: transparent;
-  color: white; }
+  color: white;
+  transition: 0.1s; }
   .btn--outline:visited {
     color: white; }
   .btn--outline:hover {
-    background: white; }
+    background: white;
+    transition: 0.2s; }
   .btn--outline.bg-ref--secondary:hover {
     color: #00ace4; }
   .btn--outline.bg-ref--tertiary:hover {

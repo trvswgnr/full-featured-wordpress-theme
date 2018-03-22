@@ -39,7 +39,7 @@ var config = {
       ghostMode: {
         clicks: false,
         forms: false
-        }
+      }
     })
   ]
 };

@@ -10,7 +10,7 @@
     <hr class="hr--small hr--accent">
     <div class="row">
       <div class="col-sm-6">
-      <div class="section--sm u-text-larger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ullam, quibusdam quidem ex eum sequi. Asperiores illo dolores tempore est nemo delectus fuga assumenda sapiente vel totam? Modi, asperiores, quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repellendus error, dolorem dolore accusantium quidem iste beatae ducimus nostrum veniam vitae, reprehenderit corrupti laborum est atque eos expedita, voluptatum adipisci?</div>
+      <div class="section--sm u-text-larger">Solana Empowered was founded on one simple principle: there has to be a better way to find temporary housing. With the guiding principles of simplicity, clarity, and diversity, we developed a unique platform allows an open marketplace for global temporary housing suppliers,  centralized management of booking agreements, and ease of use for organizations at any scale.</div>
       </div>
       <div class="col-sm-6"><img src="<?php echo get_template_directory_uri() . '/assets/img/about-image-1.png'; ?>" alt=""></div>
     </div>
@@ -20,10 +20,10 @@
 <section class="section section--tertiary has-image">
 <div class="section__bg" style="background-image: url('<?php echo get_template_directory_uri() . '/assets/img/about-image-bg-1.png'; ?>')"></div>
  <div class="container u-text-center">
-  <h2 class="u-text-center u-color-white">OUR MISSION</h2>
+  <h2 class="u-text-center u-color-white">MISSION / VISION</h2>
   <hr class="hr--small hr--accent">
   <div class="section__content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ex. Corporis ullam, eligendi. Voluptatibus voluptates aliquam ratione consequatur consectetur autem eligendi culpa, quod a maiores hic, voluptas. Debitis dolore, quod!</p>
+    <p>Solana Empowered aims to improve temporary housing processes through a robust, comprehensive platform and industry-leading customer service.</p>
   </div>
   </div>
 </section>
@@ -37,7 +37,7 @@
       <h2>DIVERSITY</h2>
       <hr class="hr--small hr--left hr--accent">
       <div class="u-text-larger">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorem dolores id quam neque autem atque rerum sint mollitia maiores nesciunt, harum obcaecati et asperiores voluptate debitis aspernatur corrupti doloribus.</p>
+        <p>We pride ourselves on empowering diversity. As a certified Minority and Women Business Enterprise (MWBE) and Disabled Veteran entity, your temporary housing spend with Solana Empowered counts toward meeting your company’s diversity goals.</p>
       </div>
     </div>
     </div>
