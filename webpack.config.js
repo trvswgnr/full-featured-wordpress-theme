@@ -30,12 +30,16 @@ var config = {
       filename: 'assets/css/[name].css',
       allChunks: true,
     }),
-    // @NOTE: make sure this proxy matches the folder name of your wordpress installation
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
+      // @NOTE: make sure this proxy matches the folder name of your wordpress installation
       proxy: 'http://localhost/solana-empowered',
-      files: ['**/*.php']
+      files: ['**/*.php'],
+      ghostMode: {
+        clicks: false,
+        forms: false
+        }
     })
   ]
 };
