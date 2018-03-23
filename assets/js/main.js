@@ -78,7 +78,9 @@ module.exports = __webpack_require__(6);
 "use strict";
 
 
+__webpack_require__(9);
 __webpack_require__(2);
+__webpack_require__(7);
 __webpack_require__(3);
 __webpack_require__(4);
 __webpack_require__(5);
@@ -90,6 +92,9 @@ __webpack_require__(5);
 "use strict";
 
 
+/**
+  * Events that fire when the page is loaded.
+  */
 $(document).ready(function () {
   $('.carousel').slick();
 });
@@ -155,7 +160,6 @@ var elements = document.querySelectorAll('.js-fit-text');
 
 window.onresize = function () {
   var window_width = $(window).width();
-  console.log(window_width);
   if (window_width <= 460) {
     Array.prototype.forEach.call(elements, fitText);
   }
@@ -168,6 +172,82 @@ window.onresize();
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Events that fire on window scroll
+ */
+
+$(window).scroll(function () {
+  if (is_visible('#how_it_works', 200)) {
+    if (VIEWPORT_WIDTH >= 768) {
+      $('.marketing-points--alt .marketing-points__heading.is-first .line').animate({
+        width: '100%'
+      }, 500, function () {
+        setTimeout(function () {
+          $('.marketing-points--alt .marketing-points__heading.is-middle .line').animate({
+            width: '100%'
+          }, 500);
+        }, 200);
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 8 */,
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Global Variables and Methods
+ */
+
+var VIEWPORT_WIDTH = $(window).width();
+
+/**
+ * Determine if the target element is in view and if so return true
+ */
+function in_view(target) {
+  var el_offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+  var amount_scrolled = $(window).scrollTop();
+  var el_position = $(target).offset();
+  el_position = el_position.top;
+  var offset = el_offset;
+  var trigger_position = el_position - offset;
+  if (amount_scrolled >= trigger_position) {
+    return true;
+  }
+}
+
+/**
+ * Adds the :onScreen pseudo selector to jQuery to affect elements visible in the viewport.
+ */
+;
+(function ($) {
+  $.expr[":"].onScreen = function (elem) {
+    var $window = $(window);
+    var viewport_top = $window.scrollTop();
+    var viewport_height = $window.height();
+    var viewport_bottom = viewport_top + viewport_height;
+    var $elem = $(elem);
+    var top = $elem.offset().top;
+    var height = $elem.height();
+    var bottom = top + height;
+
+    return top >= viewport_top && top < viewport_bottom || bottom > viewport_top && bottom <= viewport_bottom || height > viewport_height && top <= viewport_top && bottom >= viewport_bottom;
+  };
+})(jQuery);
 
 /***/ })
 /******/ ]);

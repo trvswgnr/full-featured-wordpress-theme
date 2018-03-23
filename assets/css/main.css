@@ -1053,22 +1053,31 @@ address {
     font-size: 2em;
     text-transform: uppercase;
     position: relative; }
-    .marketing-points--alt .marketing-points__heading:before {
+    .marketing-points--alt .marketing-points__heading .line {
       content: '';
       display: block;
       position: absolute;
       height: 3px;
-      width: 100%;
+      width: 0%;
       top: 84px;
       background: #00ace4; }
-    .marketing-points--alt .marketing-points__heading.is-first:before {
-      left: 50%; }
-    .marketing-points--alt .marketing-points__heading.is-last:before {
-      right: 50%; }
-    @media (max-width: 768px) {
-      .marketing-points--alt .marketing-points__heading.is-middle:before {
-        left: -10%;
-        width: 120%; } }
+      @media (max-width: 768px) {
+        .marketing-points--alt .marketing-points__heading .line {
+          width: 100%; } }
+    .marketing-points--alt .marketing-points__heading.is-first .line {
+      left: calc(50% + 16px); }
+    .marketing-points--alt .marketing-points__heading.is-middle .line {
+      left: calc(50% + 16px); }
+      @media (max-width: 768px) {
+        .marketing-points--alt .marketing-points__heading.is-middle .line {
+          left: -10%;
+          width: 120%; } }
+    .marketing-points--alt .marketing-points__heading.is-last .line {
+      display: none;
+      right: calc(50% + 16px); }
+      @media (max-width: 768px) {
+        .marketing-points--alt .marketing-points__heading.is-last .line {
+          display: block; } }
     .marketing-points--alt .marketing-points__heading:after {
       content: '';
       display: block;
