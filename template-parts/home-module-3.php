@@ -1,10 +1,11 @@
 <?php
-$module_3_heading = get_field('home_module_3_heading');
+// module 3: HOW IT WORKS
+$module_3_heading    = get_field('home_module_3_heading');
 $module_3_subheading = get_field('home_module_3_subheading');
-$module_3_item_1 = get_field('home_module_3_item_1');
-$module_3_item_2 = get_field('home_module_3_item_2');
-$module_3_item_3 = get_field('home_module_3_item_3');
-$module_3_button = get_field('home_module_3_button');
+$module_3_item_1     = get_field('home_module_3_item_1');
+$module_3_item_2     = get_field('home_module_3_item_2');
+$module_3_item_3     = get_field('home_module_3_item_3');
+$module_3_button     = get_field('home_module_3_button');
 ?>
 <section class="section" id="how_it_works">
   <div class="container u-text-center">

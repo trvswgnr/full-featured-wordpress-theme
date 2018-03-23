@@ -1,4 +1,5 @@
 <?php
+// module 2: WHAT SETS US APART
 $module_2_heading    = get_field( 'home_module_2_heading'    );
 $module_2_subheading = get_field( 'home_module_2_subheading' );
 
