@@ -22,27 +22,36 @@
     text-transform: uppercase;
     position: relative;
 
-    &:before {
+    .line {
       content: '';
       display:block;
       position: absolute;
       height: 3px;
-      width: 100%;
+      width: 0%;
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
       top: 84px;
       background: color('secondary');
     }
 
-    &.is-first:before {
-      left: 50%;
+    &.is-first .line {
+      left: calc(50% + 16px);
     }
 
-    &.is-last:before {
-      right: 50%;
-    }
-    &.is-middle:before {
+    &.is-middle .line {
+      left: calc(50% + 16px);
       @media (max-width: $tablet) {
-      left: -10%;
-      width: 120%;
+        left: -10%;
+        width: 120%;
+      }
+    }
+
+    &.is-last .line {
+      display: none;
+      right: calc(50% + 16px);
+      @media (max-width: $tablet) {
+        display: block;
       }
     }
 
