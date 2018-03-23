@@ -1,4 +1,4 @@
-import { VIEWPORT_WIDTH } from './globals';
+import { viewport_width } from './globals';
 
 export const fitText = () => {
   let elements;
@@ -24,7 +24,7 @@ export const fitText = () => {
 
   elements = document.querySelectorAll('.js-fit-text');
 
-  if (VIEWPORT_WIDTH <= 460) {
+  if (viewport_width <= 460) {
     Array.prototype.forEach.call(elements, calcSize);
   }
 };

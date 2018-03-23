@@ -120,8 +120,8 @@ $(window).scroll(function () {
   /**
     * Homepage marketing points section animate lines when in viewport
     */
-  if ((0, _globals.IS_IN_VIEW)('#how_it_works', 200)) {
-    if (_globals.VIEWPORT_WIDTH >= 768) {
+  if ((0, _globals.is_in_view)('#how_it_works', 200)) {
+    if (_globals.viewport_width >= 768) {
       $('.marketing-points--alt .marketing-points__heading.is-first .line').animate({
         width: '100%'
       }, 500, function () {
@@ -152,12 +152,12 @@ Object.defineProperty(exports, "__esModule", {
  * Global Variables and Methods
  */
 
-var VIEWPORT_WIDTH = exports.VIEWPORT_WIDTH = $(window).width();
+var viewport_width = exports.viewport_width = $(window).width();
 
 /**
  * Determine if the target element is in view and if so return true
  */
-var IS_IN_VIEW = exports.IS_IN_VIEW = function IS_IN_VIEW(target) {
+var is_in_view = exports.is_in_view = function is_in_view(target) {
   var el_offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 
   var amount_scrolled = $(window).scrollTop();
@@ -203,7 +203,8 @@ Object.defineProperty(exports, "__esModule", {
   * Simple parallax effect
   */
 var parallax = exports.parallax = function parallax(target) {
-  var amountScrolled = $(window).scrollTop();
+
+  var amount_scrolled = $(window).scrollTop();
 
   $(target).each(function () {
     var speed = $(this).data('scroll-speed');
@@ -212,7 +213,7 @@ var parallax = exports.parallax = function parallax(target) {
       speed = 5;
     }
 
-    $(this).css('transform', 'translateY(' + amountScrolled * (speed / 10) * -1 + 'px)');
+    $(this).css('transform', 'translateY(' + amount_scrolled * (speed / 10) * -1 + 'px)');
   });
 };
 
@@ -266,7 +267,7 @@ var fitText = exports.fitText = function fitText() {
 
   elements = document.querySelectorAll('.js-fit-text');
 
-  if (_globals.VIEWPORT_WIDTH <= 460) {
+  if (_globals.viewport_width <= 460) {
     Array.prototype.forEach.call(elements, calcSize);
   }
 };

@@ -2,12 +2,12 @@
  * Global Variables and Methods
  */
 
-export const VIEWPORT_WIDTH = $(window).width();
+export const viewport_width = $(window).width();
 
 /**
  * Determine if the target element is in view and if so return true
  */
-export const IS_IN_VIEW = function (target, el_offset = 0) {
+export const is_in_view = function (target, el_offset = 0) {
   const amount_scrolled = $(window).scrollTop();
   let el_position = $(target).offset();
     el_position = el_position ? el_position.top : '';
