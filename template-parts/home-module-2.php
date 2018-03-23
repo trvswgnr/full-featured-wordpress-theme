@@ -66,7 +66,10 @@ $module_2_button = get_field( 'home_module_2_button' );
     if ($module_2_button) :
     ?>
     <a href="<?php echo $module_2_button['url']; ?>" class="btn btn--outline bg-ref--tertiary"><?php echo $module_2_button['title']; ?></a>
-    <?php else : ?>
+    <?php
+    // if button empy compensate margin
+    else :
+    ?>
     <div style="margin-top: -2em;"></div>
     <?php endif; ?>
   </div>
