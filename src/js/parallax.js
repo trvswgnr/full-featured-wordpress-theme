@@ -1,4 +1,4 @@
-const parallax = function(target){
+export const parallax = function(target){
   const amountScrolled = $(window).scrollTop();
 
   $(target).each(function(){
@@ -10,7 +10,3 @@ const parallax = function(target){
   });
 
 };
-
-$(window).scroll(e => {
-  parallax('.js-parallax');
-});
