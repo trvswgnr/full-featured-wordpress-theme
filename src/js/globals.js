@@ -10,7 +10,8 @@ export const VIEWPORT_WIDTH = $(window).width();
 export const in_view = function (target, el_offset = 0) {
   const amount_scrolled = $(window).scrollTop();
   let el_position = $(target).offset();
-  el_position = el_position.top;
+    el_position = el_position ? el_position.top : '';
+
   let offset = el_offset;
   let trigger_position = el_position - offset;
   if (amount_scrolled >= trigger_position) {
