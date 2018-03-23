@@ -1,3 +1,6 @@
+/**
+  * Simple parallax effect
+  */
 export const parallax = function(target){
   const amountScrolled = $(window).scrollTop();
 
