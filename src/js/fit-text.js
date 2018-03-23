@@ -15,7 +15,6 @@ var elements = document.querySelectorAll('.js-fit-text');
 
 window.onresize = function () {
   let window_width = $(window).width();
-  console.log(window_width);
   if (window_width <= 460) {
   Array.prototype.forEach.call(elements, fitText);
   }
