@@ -4,7 +4,6 @@ export const fitText = () => {
   let elements;
 
   function calcSize(item) {
-
     let parentWidth,
         percentage,
         size;

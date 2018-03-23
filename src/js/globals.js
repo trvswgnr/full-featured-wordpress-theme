@@ -7,7 +7,7 @@ export const VIEWPORT_WIDTH = $(window).width();
 /**
  * Determine if the target element is in view and if so return true
  */
-export const in_view = function (target, el_offset = 0) {
+export const IS_IN_VIEW = function (target, el_offset = 0) {
   const amount_scrolled = $(window).scrollTop();
   let el_position = $(target).offset();
     el_position = el_position ? el_position.top : '';
