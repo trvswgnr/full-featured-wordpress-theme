@@ -16,6 +16,7 @@ $module_2_item_3_description = get_field( 'home_module_2_item_3_description' );
 
 $module_2_button = get_field( 'home_module_2_button' );
 ?>
+
 <section class="section section--tertiary" id="marketing_points">
   <div class="container u-text-center">
     <h2 class="u-color-white section-title"><?php echo $module_2_heading; ?></h2>
@@ -60,7 +61,14 @@ $module_2_button = get_field( 'home_module_2_button' );
       </div>
     </div>
     <!-- /.row.marketing-points -->
+    <?php
+    // if button empty remove altogether
+    if ($module_2_button) :
+    ?>
     <a href="<?php echo $module_2_button['url']; ?>" class="btn btn--outline bg-ref--tertiary"><?php echo $module_2_button['title']; ?></a>
+    <?php else : ?>
+    <div style="margin-top: -2em;"></div>
+    <?php endif; ?>
   </div>
 </section>
 <!-- /.section#marketing_points -->
