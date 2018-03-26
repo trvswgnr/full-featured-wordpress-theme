@@ -24,6 +24,7 @@ $(document).ready(function(){
 /**
  * Events that fire on Window Scroll
  */
+
 $(window).scroll(() => {
   /**
     * Homepage marketing points section animate lines when in viewport
@@ -44,5 +45,7 @@ $(window).scroll(() => {
 
   // parallax effect on scroll
   parallax('.js-parallax');
+
+  parallax('.js-parallax-shape',1090);
 
 });
