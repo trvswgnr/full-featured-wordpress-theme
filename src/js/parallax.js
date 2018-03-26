@@ -1,7 +1,7 @@
 /**
   * Simple parallax effect
   */
-export const parallax = function(target){
+export const parallax = function(target, offset = 0){
 
   const amount_scrolled = $(window).scrollTop();
 
@@ -10,6 +10,6 @@ export const parallax = function(target){
 
     if ( isNaN(speed) ) { speed = 5; }
 
-    $(this).css('transform', `translateY(${(amount_scrolled * (speed/10) * -1)}px)`);
+    $(this).css('transform', `translateY(${(amount_scrolled * (speed/10) * -1) + offset}px)`);
   });
 };
