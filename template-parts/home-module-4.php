@@ -5,7 +5,7 @@ $module_4_description = get_field('home_module_4_description');
 $module_4_image = get_field('home_module_4_image');
 $module_4_button = get_field('home_module_4_button');
 ?>
-<section class="section section--offset-image section--secondary">
+<section class="section section--offset-image section--secondary" id="our_story">
  <div class="section__bg"></div>
   <div class="container">
     <div class="row">
