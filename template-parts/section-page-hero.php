@@ -13,7 +13,7 @@
 
       <hr class="hr--small hr--white">
 
-      <h2 class="p"><?php echo $hero_text; ?></h2>
+      <h2 class="p"><?php if ($hero_text) { echo $hero_text; } else { echo 'A Holistic Approach to Temporary Housing'; } ?></h2>
         <?php endwhile; else : ?>
       <?php endif; ?>
     </div>
