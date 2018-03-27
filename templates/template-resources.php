@@ -34,7 +34,7 @@
           <div class="resource-tile__description">
             <p><?php echo $resource_description; ?></p>
           </div>
-          <a class="resource-tile__link" href="<?php if ($resource_type === 'file') { echo $resource_file['url']; } elseif ($resource_type === 'external') { echo $resource_external_url; } else { the_permalink(); } ?>"></a>
+          <a target="_blank" rel="noopener noreferrer" class="resource-tile__link" href="<?php if ($resource_type === 'file') { echo $resource_file['url']; } elseif ($resource_type === 'external') { echo $resource_external_url; } else { the_permalink(); } ?>"></a>
           <?php if ($resource_social_links['facebook']) : ?>
             <div class="resource-tile__social"><a class="fa fa-facebook" href="<?php echo $resource_social_links['facebook']; ?>"></a></div>
           <?php endif; ?>
