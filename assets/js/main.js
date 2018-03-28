@@ -174,7 +174,7 @@ module.exports = __webpack_require__(7);
 
 __webpack_require__(4);
 __webpack_require__(6);
-__webpack_require__(1);
+__webpack_require__(8);
 
 /***/ }),
 /* 4 */
@@ -190,9 +190,8 @@ var _parallax = __webpack_require__(5);
 var _fitText = __webpack_require__(1);
 
 /**
-  * Run these functions in order.
+  * These functions execute in order.
   */
-
 (function () {
   (0, _fitText.fitText)();
 })();
@@ -205,7 +204,8 @@ var _fitText = __webpack_require__(1);
  */
 $(document).ready(function () {
   $('.carousel').slick();
-});
+}); // /.ready
+
 
 /**
  * Events that fire on Window Scroll
@@ -233,7 +233,7 @@ $(window).scroll(function () {
   (0, _parallax.parallax)('.js-parallax');
 
   (0, _parallax.parallax)('.js-parallax-shape', 1090);
-});
+}); // /.scroll
 
 /***/ }),
 /* 5 */
@@ -282,6 +282,44 @@ $('.js-menu-toggle').click(function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+  * Social Sharing Links
+  */
+$('.js-social-share').click(function (e) {
+  // we're not going to go to the link, just pull data from it
+  e.preventDefault();
+
+  // decide what social share url string to use based on 'data-social' value
+  var social = $(this).data('social');
+
+  // pull the a href value
+  var url = $(this).attr('href');
+  // pop window parameters
+  var window_args = "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600";
+  var share_link = void 0;
+
+  if (url === '' || url === '#') {
+    url = window.location.href;
+  }
+
+  if (social === 'facebook') {
+    share_link = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+  } else if (social === 'twitter') {
+    share_link = "https://twitter.com/intent/tweet?url=" + url;
+  } else {
+    share_link = "https://www.linkedin.com/shareArticle?mini=true&url=" + url;
+  }
+
+  window.open(share_link, "", window_args);
+});
 
 /***/ })
 /******/ ]);
