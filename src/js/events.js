@@ -6,9 +6,8 @@ import { parallax } from "./parallax";
 import { fitText } from "./fit-text";
 
 /**
-  * Run these functions in order.
+  * These functions execute in order.
   */
-
 (function(){
   fitText();
 })();
@@ -18,7 +17,7 @@ import { fitText } from "./fit-text";
   */
 $(document).ready(function(){
   $('.carousel').slick();
-});
+}); // /.ready
 
 
 /**
@@ -48,4 +47,4 @@ $(window).scroll(() => {
 
   parallax('.js-parallax-shape',1090);
 
-});
+}); // /.scroll
