@@ -33,16 +33,13 @@
           <hr class="hr--small hr--left"/>
           <div class="resource-tile__description">
             <p><?php echo $resource_description; ?></p>
+
           </div>
           <a target="_blank" rel="noopener noreferrer" class="resource-tile__link" href="<?php if ($resource_type === 'file') { echo $resource_file['url']; } elseif ($resource_type === 'external') { echo $resource_external_url; } else { the_permalink(); } ?>"></a>
-          <?php if ($resource_social_links['facebook']) : ?>
-            <div class="resource-tile__social"><a class="fa fa-facebook" href="<?php echo $resource_social_links['facebook']; ?>"></a></div>
-          <?php endif; ?>
-          <?php if ($resource_social_links['linkedin']) : ?>
-            <div class="resource-tile__social"><a class="fa fa-linkedin" href="<?php echo $resource_social_links['linkedin']; ?>"></a></div>
-          <?php endif; ?>
-          <?php if ($resource_social_links['twitter']) : ?>
-            <div class="resource-tile__social"><a class="fa fa-twitter" href="<?php echo $resource_social_links['twitter']; ?>"></a></div>
+          <?php if ($resource_social_links) : ?>
+            <div class="resource-tile__social"><a class="fa fa-twitter js-social-share" data-social="twitter" href="<?php if ($resource_type === 'file') { echo $resource_file['url']; } elseif ($resource_type === 'external') { echo $resource_external_url; } else { the_permalink(); } ?>"></a></div>
+
+            <div class="resource-tile__social"><a class="fa fa-linkedin js-social-share" data-social="linkedin" href="<?php if ($resource_type === 'file') { echo $resource_file['url']; } elseif ($resource_type === 'external') { echo $resource_external_url; } else { the_permalink(); } ?>"></a></div>
           <?php endif; ?>
         </div><!-- /.resource-tile -->
       </div><!-- /.col-sm-6 -->
