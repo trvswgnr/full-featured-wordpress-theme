@@ -16,7 +16,9 @@ import { fitText } from "./fit-text";
   * Events that fire when the page is loaded.
   */
 $(document).ready(function(){
-  $('.carousel').slick();
+  $('.carousel').slick({
+    adaptiveHeight: true
+  });
 }); // /.ready
 
 

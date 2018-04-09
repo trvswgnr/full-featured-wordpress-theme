@@ -160,7 +160,9 @@ var _fitText = __webpack_require__(5);
  * -- EVENTS
  */
 $(document).ready(function () {
-  $('.carousel').slick();
+  $('.carousel').slick({
+    adaptiveHeight: true
+  });
 }); // /.ready
 
 
