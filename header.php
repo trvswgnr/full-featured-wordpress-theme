@@ -21,7 +21,7 @@
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
               </div>
                <div class="nav-wrapper u-visible-desktop">
-                <div class="login-btn"><a href="<?php echo get_site_url() . '/login'; ?>"><i class="fa fa-lock fa-fw"></i>Login</a></div>
+                <div class="login-btn"><a href="<?php the_field('login_url','options'); ?>"><i class="fa fa-lock fa-fw"></i>Login</a></div>
                 <?php
                 wp_nav_menu( array(
                   'theme_location'  => 'primary',
