@@ -32,6 +32,14 @@
   color: #ffffff !important;
 }
 
+.u-color-primary {
+  color: color('primary') !important;
+}
+
+.u-color-link {
+  color: color('secondary') !important;
+}
+
 .u-color-secondary {
   color: color('secondary') !important;
 }
