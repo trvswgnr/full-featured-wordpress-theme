@@ -19,6 +19,12 @@ if ( ! function_exists( 'spx_setup' ) ) :
      'mobile'  => esc_html__( 'Mobile', 'spx')
     ) );
    }
+    // ACF - Add Options page-header
+    // Usage within template file: the_field('header_title', 'option');
+    if( function_exists('acf_add_options_page') ) {
+      acf_add_options_page();
+    }
+
 endif;
 add_action( 'after_setup_theme', 'spx_setup' );
 ?>
