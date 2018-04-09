@@ -3,6 +3,7 @@ $cta_heading = get_field('cta_heading');
 $cta_button_text = get_field('cta_button_text');
 $cta_button_link = get_field('cta_button_link');
 ?>
+<?php if ($cta_heading) : ?>
  <div class="cta">
   <div class="cta__inner">
     <div class="container">
@@ -13,3 +14,4 @@ $cta_button_link = get_field('cta_button_link');
     <a href="<?php if (!empty($cta_button_link)) { echo $cta_button_link['url']; } else { echo get_site_url() . '/contact'; } ?>" class="btn btn--large btn--primary"><?php echo $cta_button_text; ?></a>
   </div>
 </div>
+<?php endif; ?>
