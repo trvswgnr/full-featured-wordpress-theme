@@ -1,11 +1,28 @@
-.team-member {
-
-}
 .team-member .row {
-  align-items: center;
+  align-items: flex-start;
 }
-.team-member__photo img {
-  float: right;
+
+.team-member__info {
+  @media (min-width: $tablet) {
+    padding-top: 50px;
+  }
+}
+
+.team-member__photo{
+  @include fluid-property(padding-left, 50, 150, $mobile, $tablet);
+  @include fluid-property(padding-right, 50, 150, $mobile, $tablet);
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+  img {
+    float: right;
+  }
+}
+
+.our-story__content {
+  @media (max-width: $tablet) {
+    padding-top: 0;
+  }
 }
 
 .team-member__title {
