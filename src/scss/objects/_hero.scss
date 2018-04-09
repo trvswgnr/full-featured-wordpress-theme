@@ -50,7 +50,7 @@ $hero-width: 780px;
   z-index: 4;
   top: 95px;
   color: white;
-  padding: 3em;
+  @include fluid-property(padding,20, 50, $phone, $desktop);
 }
 
 .cta__heading {
@@ -93,6 +93,12 @@ $page-hero-offset: 90px;
   left: 0;
   right: 0;
   bottom: -$page-hero-offset;
+
+  @media (max-width: $tablet) {
+    bottom: initial;
+    position: relative;
+    margin-bottom: -85px;
+  }
 }
 
 $page-hero-inner-width: 665px;
