@@ -180,6 +180,12 @@ address {
 .u-color-white {
   color: #ffffff !important; }
 
+.u-color-primary {
+  color: #b2d357 !important; }
+
+.u-color-link {
+  color: #00ace4 !important; }
+
 .u-color-secondary {
   color: #00ace4 !important; }
 

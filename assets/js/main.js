@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -118,52 +118,20 @@ var is_in_view = exports.is_in_view = function is_in_view(target) {
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+__webpack_require__(2);
+module.exports = __webpack_require__(8);
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.fitText = undefined;
-
-var _globals = __webpack_require__(0);
-
-var fitText = exports.fitText = function fitText() {
-  var elements = void 0;
-
-  function calcSize(item) {
-    var parentWidth = void 0,
-        percentage = void 0,
-        size = void 0;
-
-    item.style.display = 'inline-block';
-    item.style.fontSize = '1px';
-    parentWidth = item.parentNode.offsetWidth;
-    percentage = parentWidth / item.offsetWidth;
-    size = 0;
-
-    while (item.offsetWidth < parentWidth) {
-      size += 1;
-      item.style.fontSize = size + 'px';
-    }
-
-    item.style.fontSize = size - 1 + 'px';
-  }
-
-  elements = document.querySelectorAll('.js-fit-text');
-
-  if (_globals.viewport_width <= 460) {
-    Array.prototype.forEach.call(elements, calcSize);
-  }
-};
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(3);
-module.exports = __webpack_require__(7);
+"use strict";
 
+
+__webpack_require__(3);
+__webpack_require__(6);
+__webpack_require__(7);
 
 /***/ }),
 /* 3 */
@@ -172,22 +140,11 @@ module.exports = __webpack_require__(7);
 "use strict";
 
 
-__webpack_require__(4);
-__webpack_require__(6);
-__webpack_require__(8);
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 var _globals = __webpack_require__(0);
 
-var _parallax = __webpack_require__(5);
+var _parallax = __webpack_require__(4);
 
-var _fitText = __webpack_require__(1);
+var _fitText = __webpack_require__(5);
 
 /**
   * These functions execute in order.
@@ -236,7 +193,7 @@ $(window).scroll(function () {
 }); // /.scroll
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -266,6 +223,49 @@ var parallax = exports.parallax = function parallax(target) {
 };
 
 /***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fitText = undefined;
+
+var _globals = __webpack_require__(0);
+
+var fitText = exports.fitText = function fitText() {
+  var elements = void 0;
+
+  function calcSize(item) {
+    var parentWidth = void 0,
+        percentage = void 0,
+        size = void 0;
+
+    item.style.display = 'inline-block';
+    item.style.fontSize = '1px';
+    parentWidth = item.parentNode.offsetWidth;
+    percentage = parentWidth / item.offsetWidth;
+    size = 0;
+
+    while (item.offsetWidth < parentWidth) {
+      size += 1;
+      item.style.fontSize = size + 'px';
+    }
+
+    item.style.fontSize = size - 1 + 'px';
+  }
+
+  elements = document.querySelectorAll('.js-fit-text');
+
+  if (_globals.viewport_width <= 460) {
+    Array.prototype.forEach.call(elements, calcSize);
+  }
+};
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -279,12 +279,6 @@ $('.js-menu-toggle').click(function () {
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -320,6 +314,12 @@ $('.js-social-share').click(function (e) {
 
   window.open(share_link, "", window_args);
 });
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
