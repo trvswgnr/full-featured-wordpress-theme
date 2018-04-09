@@ -15,7 +15,7 @@
     <address class="address-contact fit-box">
      <?php the_field('option_address','options'); ?><br>
      <a href="tel:<?php the_field('option_phone','options'); ?>" class="u-color-link"><?php the_field('option_phone','options'); ?></a><br>
-      <a href="mailto:<?php the_field('option_email', 'options'); ?>" class="u-color-link x-js-fit-text">Email Us</a>
+     <a href="mailto:<?php the_field('option_email', 'options'); ?>" class="u-color-link x-js-fit-text">Email Us</a>
     </address>
   </div>
 </section>
