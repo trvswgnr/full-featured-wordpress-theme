@@ -6,13 +6,13 @@
 
 <?php $module_1 = get_field('about_module_1'); ?>
 
-<section class="section">
+<section class="section" id="our_story">
   <div class="container">
     <h2 class="u-text-center"><?php echo $module_1['heading']; ?></h2>
     <hr class="hr--small hr--accent">
     <div class="row">
       <div class="col-sm-6">
-      <div class="section--sm u-text-larger"><?php echo $module_1['content']; ?></div>
+      <div class="section--sm u-text-larger our-story__content"><?php echo $module_1['content']; ?></div>
       </div>
       <div class="col-sm-6"><img src="<?php echo get_template_directory_uri() . '/assets/img/about-image-1.png'; ?>" alt=""></div>
     </div>
@@ -71,7 +71,7 @@ if( $members->have_posts() ) :
     <div class="carousel__slide">
       <div class="team-member">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 team-member__info">
             <h4 class="team-member__title"><?php echo $member_title; ?></h4>
             <h4 class="team-member__name"><?php echo $member_name; ?></h4>
             <div class="team-member__description">
