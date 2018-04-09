@@ -4,40 +4,45 @@
 
 <?php get_template_part('template-parts/section', 'page-hero'); ?>
 
+<?php $module_1 = get_field('about_module_1'); ?>
+
 <section class="section">
   <div class="container">
-    <h2 class="u-text-center">our story</h2>
+    <h2 class="u-text-center"><?php echo $module_1['heading']; ?></h2>
     <hr class="hr--small hr--accent">
     <div class="row">
       <div class="col-sm-6">
-      <div class="section--sm u-text-larger">Solana Empowered was founded on one simple principle: there has to be a better way to find temporary housing. With the guiding principles of simplicity, clarity, and diversity, we developed a unique platform allows an open marketplace for global temporary housing suppliers,  centralized management of booking agreements, and ease of use for organizations at any scale.</div>
+      <div class="section--sm u-text-larger"><?php echo $module_1['content']; ?></div>
       </div>
       <div class="col-sm-6"><img src="<?php echo get_template_directory_uri() . '/assets/img/about-image-1.png'; ?>" alt=""></div>
     </div>
   </div>
 </section>
 
+<?php $module_2 = get_field('about_module_2'); ?>
+
 <section class="section section--tertiary has-image">
 <div class="section__bg" style="background-image: url('<?php echo get_template_directory_uri() . '/assets/img/about-image-bg-1.png'; ?>')"></div>
  <div class="container u-text-center">
-  <h2 class="u-text-center u-color-white">MISSION / VISION</h2>
+  <h2 class="u-text-center u-color-white"><?php echo $module_2['heading']; ?></h2>
   <hr class="hr--small hr--accent">
   <div class="section__content">
-    <p>Solana Empowered aims to improve temporary housing processes through a robust, comprehensive platform and industry-leading customer service.</p>
+    <p><?php echo $module_2['content']; ?></p>
   </div>
   </div>
 </section>
 
+<?php $module_3 = get_field('about_module_3'); ?>
 <section id="diversity" class="section section--image-left">
  <div class="section__img" style="background-image: url('<?php echo get_template_directory_uri() . '/assets/img/about-diversity.png'; ?>')"></div>
   <div class="row">
     <div class="col-sm-6"></div>
     <div class="col-sm-5">
       <div class="section__content--right">
-      <h2>DIVERSITY</h2>
+      <h2><?php echo $module_3['heading']; ?></h2>
       <hr class="hr--small hr--left hr--accent">
       <div class="u-text-larger">
-        <p>We pride ourselves on empowering diversity. As a certified Minority and Women Business Enterprise (MWBE) and Disabled Veteran entity, your temporary housing spend with Solana Empowered counts toward meeting your company’s diversity goals.</p>
+        <p><?php echo $module_3['content']; ?></p>
       </div>
     </div>
     </div>
