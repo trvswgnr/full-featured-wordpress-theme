@@ -13,10 +13,9 @@
     <h2>OUR LOCATION</h2>
     <hr class="hr--small hr--accent">
     <address class="address-contact fit-box">
-      1604 E 4th Ave<br>
-      Tampa, FL 33605<br>
-      1-833-273-5663<br>
-      <a href="mailto:marketing@mobilityempowered.com" class="js-fit-text">marketing@mobilityempowered.com</a>
+     <?php the_field('option_address','options'); ?><br>
+     <a href="tel:<?php the_field('option_phone','options'); ?>" class="u-color-link"><?php the_field('option_phone','options'); ?></a><br>
+      <a href="mailto:<?php the_field('option_email', 'options'); ?>" class="u-color-link x-js-fit-text">Email Us</a>
     </address>
   </div>
 </section>
