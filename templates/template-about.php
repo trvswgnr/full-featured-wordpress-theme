@@ -50,8 +50,9 @@
 </section>
 <!-- /#diversity -->
 
+<?php $module_4 = get_field('about_module_4'); ?>
 <div class="container">
- <h2 class="u-text-center">OUR TEAM</h2>
+ <h2 class="u-text-center"><?php echo $module_4['heading']; ?></h2>
   <hr class="hr--small hr--accent">
   <div class="carousel">
 <?php
