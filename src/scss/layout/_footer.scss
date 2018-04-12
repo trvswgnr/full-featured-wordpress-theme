@@ -10,7 +10,7 @@
 .footer__logo {
   max-width: 200px;
   width: 100%;
-  margin: 0 auto 3em;
+  margin: 0 auto 1.5em;
 }
 
 .footer__info {
@@ -31,5 +31,19 @@
     font-size: 0.8em;
 //    font-weight: 700;
     margin-top: 2em;
+  }
+}
+
+
+.footer__images {
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  margin-bottom: 1.5em;
+}
+
+.footer-image {
+  img {
+    height: 100px;
   }
 }

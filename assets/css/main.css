@@ -781,7 +781,7 @@ address {
 .footer__logo {
   max-width: 200px;
   width: 100%;
-  margin: 0 auto 3em; }
+  margin: 0 auto 1.5em; }
 
 .footer__info {
   margin-bottom: 0.5em;
@@ -797,6 +797,15 @@ address {
   .sparxoo-credit {
     font-size: 0.8em;
     margin-top: 2em; } }
+
+.footer__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em; }
+
+.footer-image img {
+  height: 100px; }
 
 /**
   * Section
