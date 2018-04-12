@@ -15,6 +15,9 @@
   height: 100%;
   background-color: color('accent');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   @media (max-width: $tablet) {
     width: 100%;
     background-image: none !important;
@@ -32,13 +35,16 @@
 .solution-box__row {
   align-items: center;
   min-height: 600px;
+
   @media (max-width: $tablet) {
     min-height: auto;
     padding: 3em 0;
+
     .hr--accent {
       border-color: white;
     }
   }
+
   .solution-box--reverse & {
     flex-direction: row-reverse;
   }
@@ -46,18 +52,22 @@
 
 .solution-box__content {
   padding-right: 3em;
+
   @media (max-width: $tablet) {
     color:white;
     padding-right: 0;
   }
+
   .solution-box--reverse & {
     padding-right: 0;
     padding-left: 3em;
+
     @media (max-width: $tablet) {
       color: white;
       padding-left: 0;
     }
   }
+
   p {
     font-size: 1.1em;
   }
@@ -65,6 +75,7 @@
 
 .solution-box__bg--manage {
   background-color: color('primary');
+
   @media (max-width: $tablet) {
     background-color: darken(color('primary'),5%);
   }
