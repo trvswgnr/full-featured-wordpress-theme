@@ -40,9 +40,12 @@
   justify-content:  center;
   align-items:  center;
   margin-bottom: 1.5em;
+  width: 100%;
 }
 
 .footer-image {
+  padding: 0.5em 1em;
+
   img {
     height: 100px;
   }

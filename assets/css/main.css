@@ -802,10 +802,13 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  width: 100%; }
 
-.footer-image img {
-  height: 100px; }
+.footer-image {
+  padding: 0.5em 1em; }
+  .footer-image img {
+    height: 100px; }
 
 /**
   * Section
