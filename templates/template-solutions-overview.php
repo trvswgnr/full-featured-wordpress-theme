@@ -13,7 +13,7 @@
 <?php $solution_1 = get_field('solution_1'); ?>
 
 <div class="solution-box">
-  <div class="solution-box__bg solution-box__bg--search" style="background-image: url(<?php the_field('solution_1_image'); ?>);"></div>
+  <div class="solution-box__bg solution-box__bg--search" style="background-image: url(<?php $solution_1['image']['url']; ?>);"></div>
   <div class="container">
     <div class="row solution-box__row">
       <div class="col-sm-6">
@@ -32,7 +32,7 @@
 
 <?php $solution_2 = get_field('solution_2'); ?>
 <div class="solution-box solution-box--reverse">
-  <div class="solution-box__bg solution-box__bg--select" style="background-image: url(<?php the_field('solution_2_image'); ?>);"></div>
+  <div class="solution-box__bg solution-box__bg--select" style="background-image: url(<?php $solution_2['image']['url']; ?>);"></div>
   <div class="container">
     <div class="row solution-box__row">
       <div class="col-sm-6">
@@ -51,7 +51,7 @@
 
 <?php $solution_3 = get_field('solution_3'); ?>
 <div class="solution-box">
-  <div class="solution-box__bg solution-box__bg--manage" style="background-image: url(<?php the_field('solution_3_image'); ?>);"></div>
+  <div class="solution-box__bg solution-box__bg--manage" style="background-image: url(<?php $solution_3['image']['url']; ?>);"></div>
   <div class="container">
     <div class="row solution-box__row">
       <div class="col-sm-6">
