@@ -808,7 +808,7 @@ address {
 .footer-image {
   padding: 0.5em 1em; }
   .footer-image img {
-    height: 100px; }
+    max-height: 100px; }
 
 /**
   * Section
