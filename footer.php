@@ -10,7 +10,7 @@
       foreach ($footer_images as $images) :
     ?>
       <div class="footer-image">
-        <img src="<?php $images['image']['url']; ?>" alt="<?php $images['image']['title']; ?>">
+        <img src="<?php echo $images['image']['url']; ?>" alt="<?php echo $images['image']['title']; ?>">
       </div>
     <?php
       endforeach;
