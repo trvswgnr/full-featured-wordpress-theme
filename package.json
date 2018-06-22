@@ -1,9 +1,8 @@
 {
-  "name": "solana-empowered",
+  "name": "taw-full-featured-wordpress-theme",
   "version": "1.0.0",
-  "description": "Custom WordPress theme for Solana Empowered.",
+  "description": "Custom WordPress theme.",
   "main": "webpack.config.js",
-  "repository": "https://sparxoo.git.beanstalkapp.com/solana-empowered.git",
   "scripts": {
     "dev": "webpack --watch --progress --colors",
     "build": "webpack -p --progress --hide-modules && autoprefixer-cli -o assets/css/main.css assets/css/main.css"
